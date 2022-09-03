@@ -7,7 +7,7 @@
 3. Open the <b>'http://localhost:3000'</b>
 4. Enjoy!
 
-# How to add new page to the projcet?
+# How to add new page to the project?
 
 In this example we would like to create a new page which will be available at the 'http://localhost/dwarfdogs' 🐕 url.
 
