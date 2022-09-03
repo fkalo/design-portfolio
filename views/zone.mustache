@@ -10,9 +10,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="img/favicon-filled.png" />
+    <link rel="icon" href="./images/favicon-filled.png" />
     <!-- <link rel="apple-touch-icon" href="img/apple-touch-icon.png" /> TODO -->
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="manifest" href="./manifests/manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,10 +29,10 @@
       href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/projects.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="./stylesheets/general.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/projects.css" />
+    <link rel="stylesheet" href="./stylesheets/queries.css" />
 
     <script
       type="module"
@@ -47,29 +47,33 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="./javascript/script.js"></script>
 
     <title>Fruzsina Kalo &bull; Product Designer</title>
   </head>
 
   <body>
     <header class="header">
-      <a href="index.html">
-        <img class="logo" src="img/logo-outline.png" alt="Fruzsina Kalo logo" />
+      <a href="/">
+        <img class="logo" src="./images/logo-outline.png" alt="Fruzsina Kalo logo" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="smooth main-nav-link" href="./#work">Work</a>
+            <a class="smooth main-nav-link" href="/#work">Work</a>
           </li>
           <li>
-            <a class="smooth main-nav-link" href="./#methods">My approach</a>
+            <a class="smooth main-nav-link" href="/#method/s"
+              >My approach</a
+            >
           </li>
           <li>
-            <a class="smooth main-nav-link" href="./#contact">Contact</a>
+            <a class="smooth main-nav-link" href="/#contact"
+              >Contact</a
+            >
           </li>
           <li>
-            <a class="main-nav-link nav-cta" target="_blank" href="resume.pdf"
+            <a class="main-nav-link nav-cta" target="_blank" href="./pdf/resume.pdf"
               >Resume</a
             >
           </li>
@@ -112,7 +116,7 @@
           </div>
           <img
             class="thumbnail"
-            src="img/Zone_project/00_thumbnail.png"
+            src="./images/Zone_project/00_thumbnail.png"
             alt="Zone improvements thumbnail in BIM software, Archicad"
           />
         </div>
@@ -165,7 +169,7 @@
         </div>
         <img
           class="project-image"
-          src="img/Zone_project/Solution_NewZoneLabel.png"
+          src="./images/Zone_project/Solution_NewZoneLabel.png"
           alt="New Zone Label in BIM software, Archicad"
         />
       </section>
@@ -349,7 +353,7 @@
     <footer class="footer">
       <div class="container">
         <a class="footer-logo" href="index.html">
-          <img class="logo" src="img/logo-white.png" alt="Fruzsina Kalo logo" />
+          <img class="logo" src="./images/logo-white.png" alt="Fruzsina Kalo logo" />
         </a>
 
         <p class="copyright">
