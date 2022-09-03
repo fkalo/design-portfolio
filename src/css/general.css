@@ -90,20 +90,13 @@ body {
 .container {
   /* usually 1140px or 1200px */
   max-width: 140rem;
-  padding: 0 3.2rem;
+  padding: 0 6.4rem;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
-  row-gap: 6.4rem;
-  column-gap: 3.2rem;
-  /* margin-bottom: 9.6rem; */
 }
-
-/* .grid:last-child {
-  margin-bottom: 0;
-} */
 
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
@@ -117,6 +110,7 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
 }
 
 .grid--4-cols {
