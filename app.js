@@ -5,6 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// IMPORT ROUTERS:
 var indexRouter = require('./routes/index');
 var zoneRouter = require('./routes/zone');
 
@@ -21,6 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// PAGE ROUTING:
 app.use('/', indexRouter);
 app.use('/zone', zoneRouter);
 
