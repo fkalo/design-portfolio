@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Fruzsina Kalo is a hungarian product designer, with architectural and engineer background. She is an empowered Design thinker, who puts the user first in the UX"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon-filled.png" />
+    <!-- <link rel="apple-touch-icon" href="img/apple-touch-icon.png" /> TODO -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Fruzsina Kalo &bull; Product Designer</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" src="img/logo-white.png" alt="Fruzsina Kalo logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="smooth main-nav-link" href="#work">Work</a>
+          </li>
+          <li>
+            <a class="smooth main-nav-link" href="#methods">My approach</a>
+          </li>
+          <li>
+            <a class="smooth main-nav-link" href="#contact">Contact</a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" target="_blank" href="resume.pdf"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="hero-title heading-primary">Fruzsina Kaló</h1>
+            <!-- <div class="hero-border"></div> -->
+            <p class="hero-description">product designer</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-work" id="work">
+        <div class="container section-heading">
+          <h2 class="heading-secondary">Who am I?</h2>
+          <span class="subheading">get to know me through my work</span>
+        </div>
+
+        <div class="container body">
+          <div class="work-description">I am a product designer...</div>
+        </div>
+
+        <div class="container grid grid--5-cols margin-bottom-md">
+          <div class="work">
+            <div class="work-content">
+              <p class="work-title">
+                ...who is eager to design complex products
+              </p>
+            </div>
+            <a href="./zone.html">
+              <img
+                class="hide work-thumbnail"
+                src="img/work-thumbnails/Zone-thumbnail.png"
+                alt="Graphisoft Archicad Zones UX design"
+              />
+            </a>
+          </div>
+
+          <div class="work">
+            <div class="work-content">
+              <p class="work-title">...who is all for the team</p>
+            </div>
+            <img
+              class="hide work-thumbnail"
+              src="img/work-thumbnails/ADES-thumbnail.png"
+              alt="Graphisoft Tribe logo design"
+            />
+          </div>
+
+          <div class="work">
+            <div class="work-content">
+              <p class="work-title">...with coding skills</p>
+            </div>
+            <img
+              class="hide work-thumbnail"
+              src="img/work-thumbnails/Omnifood-thumbnail.png"
+              alt="Omnifood html css webdesign"
+            />
+          </div>
+
+          <div class="work">
+            <div class="work-content">
+              <p class="work-title">...who seeks learning experiences</p>
+            </div>
+            <img
+              class="hide work-thumbnail"
+              src="img/work-thumbnails/Designflows-thumbnail.png"
+              alt="Designflows UI design"
+            />
+          </div>
+
+          <div class="work">
+            <div class="work-content">
+              <p class="work-title">
+                ...who likes to explore creative activities
+              </p>
+            </div>
+            <img
+              class="hide work-thumbnail"
+              src="img/work-thumbnails/Cottonpasta-thumbnail.png"
+              alt="Macrame yarn creative cottonpasta small business"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-methods" id="methods">
+        <div class="container section-heading">
+          <h2 class="heading-secondary">How do I do it?</h2>
+          <span class="subheading">let me show you my methods</span>
+        </div>
+
+        <div class="container grid-diamonds grid--4-cols margin-bottom-md">
+          <div class="diamond diamond-research odd"></div>
+          <div class="diamond diamond-synthesis even"></div>
+          <div class="diamond diamond-ideation odd"></div>
+          <div class="diamond diamond-implementation even"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="index.html">
+          <img class="logo" src="img/logo-white.png" alt="Fruzsina Kalo logo" />
+        </a>
+
+        <p class="copyright">
+          designed & built by Fruzsina Kaló &copy;
+          <span class="year">2022</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
