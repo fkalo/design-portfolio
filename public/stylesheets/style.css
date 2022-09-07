@@ -43,14 +43,14 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color: #90bcb0;
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  /* background-color: #e67e22; */
-  border: 2px solid #e67e22;
-  color: #e67e22;
+  /* background-color: #a0d1c3; */
+  border: 2px solid #a0d1c3;
+  color: #a0d1c3;
   text-decoration: none;
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
@@ -58,8 +58,8 @@
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #e67e22;
-  color: #fff;
+  background-color: #a0d1c3;
+  color: #333;
 }
 
 /* MOBILE */
@@ -166,7 +166,7 @@
   margin-bottom: 9.6rem;
 }
 
-.work-description {
+.description {
   font-size: 2rem;
   line-height: 1.8;
   margin-bottom: 6.4rem;
@@ -230,8 +230,7 @@
 .grid-diamonds {
   display: grid;
   row-gap: 6.4rem;
-  column-gap: -32rem;
-  max-width: 100rem;
+  /* max-width: 100rem; */
 }
 
 .diamond {
@@ -271,198 +270,22 @@
 }
 
 /* ****************** */
-/* PRICING AND FEATURES SECTION */
+/* CONTACT SECTION */
 /* ****************** */
 
-.section-pricing {
-  padding: 9.6rem 0;
+.section-contact {
+  height: 100vh;
+  padding: 15rem 0;
+  margin-bottom: 9.6rem;
 }
 
-.pricing-plan {
-  border-radius: 11px;
-  width: 75%;
-}
-
-.pricing-plan--starter {
-  justify-self: end;
-  border: 2px solid #fdf2e9;
-  padding: 4.6rem;
-}
-
-.pricing-plan--complete {
-  background-color: #fdf2e9;
-  padding: 4.8rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing-plan--complete::after {
-  content: "Best value";
-  position: absolute;
-  top: 5%;
-  right: -10%;
-
-  color: #333;
-  background-color: #ffd43b;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 700;
-  padding: 0.8rem 4rem;
-  transform: rotate(45deg);
-}
-
-.plan-header {
-  text-align: center;
-  margin-bottom: 4.8rem;
-}
-
-.plan-name {
-  color: #cf711f;
-  font-weight: 600;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.75;
-  margin-bottom: 3.2rem;
-}
-
-.plan-price {
-  font-size: 6.2rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 1.6rem;
-}
-
-.plan-price span {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-right: 0.8rem;
-}
-
-.plan-text {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: #6f6f6f;
-}
-
-.plan-sign-up {
-  text-align: center;
-  margin-top: 4.8rem;
-}
-
-.plan-details {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.feature-icon {
-  color: #e67e22;
-  height: 3.2rem;
-  width: 3.2rem;
-  background-color: #fdf2e9;
-  padding: 1.6rem;
-  border-radius: 50%;
-  margin-bottom: 3.2rem;
-}
-
-.feature-title {
-  font-size: 2.4rem;
-  color: #333;
-  font-weight: 700;
-  margin-bottom: 1.6rem;
-}
-
-.feature-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
-}
-
-/* ****************** */
-/* CALL TO ACTION SECTION */
-/* ****************** */
-
-.section-cta {
-  /* top right bottom left */
-  /* padding: 9.6rem 0 12.8rem 0; */
-
-  /* top horizontal bottom */
-  padding: 4.8rem 0 12.8rem;
-}
-
-.cta {
-  display: grid;
-  /* 2/3 = 66.6% + 1/3 = 33.3% */
-  grid-template-columns: 2fr 1fr;
-  /* background-color: #e67e22; */
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-  border-radius: 11px;
-
-  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
-  overflow: hidden;
-}
-
-.cta-text-box {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #45260a;
-}
-
-.cta-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  margin-bottom: 4.8rem;
-}
-
-.cta .heading-secondary {
-  color: inherit;
-  /* color: #45260a; */
-  margin-bottom: 3.2rem;
-}
-
-.cta-img-box {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(235, 151, 78, 0.35),
-      hsla(28, 80%, 52%, 0.35)
-    ),
-    url("../img/eating.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.cta-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3.2rem;
-  row-gap: 2.4rem;
-}
-
-.cta-form label {
+.email {
   display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin-bottom: 1.2rem;
-}
-
-.cta-form input,
-.cta-form select {
-  width: 100%;
-  padding: 1.2rem;
-  font-size: 1.8rem;
-  font-family: inherit;
-  color: inherit;
-  background-color: #fdf2e9;
-  border: none;
-  border-radius: 9px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-}
-
-.cta-form input::placeholder {
-  color: #aaa;
-}
-
-.cta *:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+  font-family: "Advent Pro", sans-serif;
+  /* text-transform: uppercase; */
+  font-size: 6.4rem;
+  line-height: 1.8;
+  letter-spacing: 5px;
 }
 
 /* ****************** */

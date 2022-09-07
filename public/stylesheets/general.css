@@ -24,14 +24,14 @@ Large: 1.8
 
 --- 02 COLORS
 
-- Primary: #e67e22
+- Primary: #e67e22 #A0D1C3
 - Tints:
-#fdf2e9
-#fae5d3
-#eb984e
+#fdf2e9 #f6faf9
+#fae5d3 #ecf6f3
+#eb984e #bddfd5
 - Shades:
-#cf711f
-#45260a
+#cf711f #90bcb0
+#45260a #202a27
 
 - Accents:
 - Greys:
@@ -115,6 +115,7 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+  /* gap: -30rem; */
 }
 
 .grid--5-cols {
@@ -163,7 +164,7 @@ body {
   display: block;
   font-size: 1.8rem;
   font-weight: 500;
-  color: #cf711f;
+  color: #90bcb0;
   text-transform: uppercase;
   margin-bottom: 12.8rem;
   letter-spacing: 0.75px;
@@ -173,7 +174,7 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: #e67e22;
+  background-color: #a0d1c3;
   color: #fff;
   text-decoration: none;
   font-size: 2rem;
@@ -193,12 +194,12 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
+  background-color: #a0d1c3;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #cf711f;
+  background-color: #90bcb0;
 }
 
 .btn--outline:link,
@@ -232,7 +233,7 @@ body {
 .link:link,
 .link:visited {
   display: inline-block;
-  color: #e67e22;
+  color: #a0d1c3;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
@@ -241,7 +242,7 @@ body {
 
 .link:hover,
 .link:active {
-  color: #cf711f;
+  color: #90bcb0;
   border-bottom: 1px solid transparent;
 }
 
@@ -255,7 +256,7 @@ body {
 .list-icon {
   width: 3.2rem;
   height: 3.2rem;
-  color: #e67e22;
+  color: #a0d1c3;
 }
 
 .list-item {
@@ -268,7 +269,7 @@ body {
 
 /* *:focus {
   outline: none;
-  outline: 4px dotted #e67e22;
+  outline: 4px dotted #A0D1C3;
   outline-offset: 8px;
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 } */
