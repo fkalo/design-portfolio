@@ -162,7 +162,7 @@
 
 .section-work {
   height: 100vh;
-  padding: 9.6rem 0;
+  padding: 15rem 0;
   margin-bottom: 9.6rem;
 }
 
@@ -189,6 +189,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+border-wi
 }
 
 .work-title {
@@ -276,17 +277,43 @@
 .section-contact {
   height: 100vh;
   padding: 15rem 0;
+  /* padding: 9.6rem 0 9.6rem 0; */
   margin-bottom: 9.6rem;
 }
 
-.email {
-  display: block;
-  font-family: "Advent Pro", sans-serif;
-  /* text-transform: uppercase; */
-  font-size: 6.4rem;
-  line-height: 1.8;
-  letter-spacing: 5px;
+.contacts {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 4.8rem;
 }
+
+.contact:link,
+.contact:visited {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 500;
+  /* line-height: 1.2; */
+  letter-spacing: 10px;
+  transition: all 0.3s;
+  padding: 3.6rem 0;
+  /* margin: 4.8rem 0; */
+  line-height: 2;
+}
+
+.contact:hover,
+.contact:active {
+  color: #90bcb0;
+  transform: translateY(-2px);
+  text-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.2);
+}
+
+/* .email {
+  inline-size: 34rem;
+  overflow-wrap: break-word;
+} */
 
 /* ****************** */
 /* FOOTER */
