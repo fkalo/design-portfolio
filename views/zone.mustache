@@ -47,7 +47,8 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
-    <script defer src="./javascript/script.js"></script>
+        <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="./javascripts/script.js"></script>
 
     <title>Fruzsina Kalo &bull; Product Designer</title>
   </head>
@@ -63,7 +64,7 @@
             <a class="smooth main-nav-link" href="/#work">Work</a>
           </li>
           <li>
-            <a class="smooth main-nav-link" href="/#method/s"
+            <a class="smooth main-nav-link" href="/#methods"
               >My approach</a
             >
           </li>
@@ -79,20 +80,22 @@
           </li>
         </ul>
       </nav>
-
-      <div class="project-nav">
-        <div class="pager">
-          <div class="pager-circle left"></div>
-          <p class="left-text">I can't stop creating!</p>
-        </div>
-        <div class="pager">
-          <div class="pager-circle right"></div>
-          <p class="right-text">I'm a team player, too!</p>
-        </div>
-      </div>
     </header>
 
     <main>
+      <div class="project-nav">
+        <div class="pager left">
+          <div class="pager-circle">
+            <span class="left-text">I can't stop creating!</span>
+          </div>
+        </div>
+        <div class="pager right">
+          <div class="pager-circle">
+            <p class="right-text">I'm a team player, too!</p>
+          </div>
+        </div>
+      </div>
+
       <section class="section-project-intro">
         <div>
           <div class="project-intro-box">

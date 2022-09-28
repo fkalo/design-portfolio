@@ -9,35 +9,44 @@
 .pager {
   position: fixed;
   top: 50%;
+  transform: translateY(-50%);
   font-size: 1.6rem;
   font-weight: 300;
 }
 
-.pager-circle {
-  position: inherit;
-  width: 12.8rem;
-  height: 12.8rem;
-  /* background-color: #fff; */
-  border: solid 1px #555;
-  border-radius: 50%;
+.left {
+  transform: translateX(-50%);
 }
 
-.left {
-  left: -6.4rem;
+.right {
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+.pager-circle {
+  display: flex;
+  justify-content: center;
+  width: 12.8rem;
+  height: 12.8rem;
+  border: solid 1px #555;
+  border-radius: 50%;
+  white-space: nowrap;
 }
 
 .left-text {
-  position: inherit;
+  align-self: center;
+  width: 8.6rem;
   transform: rotateZ(-90deg);
-  left: -5.4rem;
-  right: auto;
+  text-align: center;
+  margin-left: 6.4rem;
 }
 
 .right-text {
-  position: inherit;
   transform: rotateZ(90deg);
-  /* top: -50px; */
-  /* right: -16px; */
+  align-self: center;
+  width: 8.6rem;
+  text-align: center;
+  margin-left: -6.4rem;
 }
 
 /* ****************** */
@@ -122,6 +131,7 @@ section {
 }
 
 .project-image {
+  overflow: hidden;
   width: 100%;
 }
 
