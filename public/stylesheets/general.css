@@ -94,6 +94,15 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.flex--vertical {
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
 }
