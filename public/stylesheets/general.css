@@ -96,7 +96,7 @@ body {
 
 .flex {
   display: flex;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .flex--vertical {
@@ -133,8 +133,8 @@ body {
 }
 
 .grid--project {
-  grid-template-columns: 3fr 5fr;
-  column-gap: 7.2rem;
+  grid-template-columns: 4fr 7fr;
+  column-gap: 9.6rem;
   align-items: center;
 }
 

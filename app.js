@@ -10,6 +10,7 @@ var indexRouter = require("./routes/index");
 var zoneRouter = require("./routes/zone");
 var adeslogoRouter = require("./routes/adeslogo");
 var omnifoodRouter = require("./routes/omnifood");
+var homelyRouter = require("./routes/homely");
 
 var app = express();
 
@@ -29,5 +30,6 @@ app.use("/", indexRouter);
 app.use("/zone", zoneRouter);
 app.use("/adeslogo", adeslogoRouter);
 app.use("/omnifood", omnifoodRouter);
+app.use("/homely", homelyRouter);
 
 module.exports = app;
