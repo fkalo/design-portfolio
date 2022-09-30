@@ -11,6 +11,7 @@ var zoneRouter = require("./routes/zone");
 var adeslogoRouter = require("./routes/adeslogo");
 var omnifoodRouter = require("./routes/omnifood");
 var homelyRouter = require("./routes/homely");
+var cottonpastaRouter = require("./routes/cottonpasta");
 
 var app = express();
 
@@ -31,5 +32,6 @@ app.use("/zone", zoneRouter);
 app.use("/adeslogo", adeslogoRouter);
 app.use("/omnifood", omnifoodRouter);
 app.use("/homely", homelyRouter);
+app.use("/cottonpasta", cottonpastaRouter);
 
 module.exports = app;

@@ -4,6 +4,18 @@
 
 .project-nav {
   position: relative;
+  /* text-transform: uppercase; */
+}
+
+.project-nav a:link,
+.project-nav a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-nav a:hover,
+.project-nav a:active {
+  color: #90bcb0;
 }
 
 .pager {
