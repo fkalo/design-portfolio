@@ -124,12 +124,15 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
-  /* gap: -30rem; */
 }
 
 .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
   column-gap: 3.2rem;
+}
+
+.grid--6-cols {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .grid--project {
@@ -175,7 +178,7 @@ body {
   font-weight: 500;
   color: #90bcb0;
   text-transform: uppercase;
-  margin-bottom: 12.8rem;
+  margin-bottom: 9.6rem;
   letter-spacing: 0.75px;
 }
 

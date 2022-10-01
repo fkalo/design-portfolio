@@ -76,7 +76,7 @@
 .icon-mobile-nav {
   height: 4.8rem;
   width: 4.8rem;
-  color: #333;
+  color: #fff;
 }
 
 .icon-mobile-nav[name="close-outline"] {
@@ -169,7 +169,7 @@
 .description {
   font-size: 2rem;
   line-height: 1.8;
-  margin-bottom: 6.4rem;
+  margin-bottom: 4.8rem;
   /* text-align: end; */
 }
 
@@ -230,45 +230,55 @@
 
 .grid-diamonds {
   display: grid;
-  row-gap: 6.4rem;
+  column-gap: 0;
   /* max-width: 100rem; */
 }
 
 .diamond {
-  width: 0;
-  height: 0;
-  border: solid 20rem;
-  border-color: transparent transparent #fff transparent;
-  /* position: absolute; */
+  width: 100%;
   transition: all 0.4s;
 }
 
-.diamond:hover {
-  transform: translateY(-6rem);
+.diamond--research:hover,
+.diamond--synthesis:hover,
+.diamond--ideation:hover,
+.diamond--implementation:hover {
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
-.diamond.odd {
-  transform: rotateZ(-90deg);
+.diamond--research:hover {
+  transform: translateX(-2rem);
 }
 
-.diamond.even {
-  transform: rotateZ(90deg);
+.diamond--synthesis:hover,
+.diamond--synthesis:hover ~ .diamond--ideation,
+.diamond--synthesis:hover ~ .diamond--implementation {
+  transform: translateX(2rem);
+  transition: all 0.4s;
 }
 
-.diamond-research {
-  left: 20rem;
+.diamond--ideation:hover ~ .diamond--implementation {
+  transform: translateX(2rem);
+  transition: all 0.4s;
 }
 
-.diamond-synthesis {
-  left: 60rem;
+.diamond--implementation:hover {
+  transform: translateX(2rem);
 }
 
-.diamond-ideation {
-  left: 60rem;
+.diamond--research:hover .hide,
+.diamond--synthesis:hover .hide,
+.diamond--ideation:hover .hide,
+.diamond--implementation:hover .hide {
+  display: block;
 }
 
-.diamond-implementation {
-  left: 100rem;
+.diamond--research:hover .initial,
+.diamond--synthesis:hover .initial,
+.diamond--ideation:hover .initial,
+.diamond--implementation:hover .initial {
+  display: none;
 }
 
 /* ****************** */
