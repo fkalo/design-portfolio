@@ -251,12 +251,17 @@
   transform: translateX(-2rem);
 }
 
-.diamond--synthesis:hover,
+.diamond--synthesis:hover ~ .diamond--research {
+  transform: translateX(-2rem);
+  transition: all 0.4s;
+}
+
+/* .diamond--synthesis:hover,
 .diamond--synthesis:hover ~ .diamond--ideation,
 .diamond--synthesis:hover ~ .diamond--implementation {
   transform: translateX(2rem);
   transition: all 0.4s;
-}
+} */
 
 .diamond--ideation:hover ~ .diamond--implementation {
   transform: translateX(2rem);
