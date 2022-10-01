@@ -239,6 +239,36 @@
   transition: all 0.4s;
 }
 
+.diamond--research,
+.diamond--synthesis,
+.diamond--ideation,
+.diamond--implementation {
+  position: relative;
+  text-align: center;
+}
+
+.text {
+  font-size: 1.8rem;
+}
+
+.text--odd {
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  /* transform: rotateZ(-45deg); */
+}
+
+.text--even {
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  /* transform: rotateZ(45deg); */
+}
+
 .diamond--research:hover,
 .diamond--synthesis:hover,
 .diamond--ideation:hover,
@@ -247,29 +277,11 @@
   transition: all 0.4s;
 }
 
-.diamond--research:hover {
-  transform: translateX(-2rem);
-}
-
-.diamond--synthesis:hover ~ .diamond--research {
-  transform: translateX(-2rem);
-  transition: all 0.4s;
-}
-
-/* .diamond--synthesis:hover,
-.diamond--synthesis:hover ~ .diamond--ideation,
-.diamond--synthesis:hover ~ .diamond--implementation {
-  transform: translateX(2rem);
-  transition: all 0.4s;
-} */
-
-.diamond--ideation:hover ~ .diamond--implementation {
-  transform: translateX(2rem);
-  transition: all 0.4s;
-}
-
-.diamond--implementation:hover {
-  transform: translateX(2rem);
+.diamond--research:hover .text,
+.diamond--synthesis:hover .text,
+.diamond--ideation:hover .text,
+.diamond--implementation:hover .text {
+  color: #fff;
 }
 
 .diamond--research:hover .hide,
@@ -284,6 +296,29 @@
 .diamond--ideation:hover .initial,
 .diamond--implementation:hover .initial {
   display: none;
+}
+
+.diamond--research:hover {
+  transform: translateX(-2rem);
+}
+
+.diamond--synthesis:hover,
+.diamond--synthesis:hover ~ .diamond--ideation,
+.diamond--synthesis:hover ~ .diamond--implementation {
+  transform: translateX(2rem);
+  transition: all 0.4s;
+}
+
+.diamond--ideation:hover ~ .diamond--implementation {
+  transform: translateX(2rem);
+  transition: all 0.4s;
+}
+
+.diamond--implementation:hover {
+  transform: translateX(2rem);
+}
+
+.diamond--research:active {
 }
 
 /* ****************** */
