@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
 
   /* Because we want the header to be sticky later */
   height: 9.6rem;
@@ -32,8 +31,8 @@
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  display: inline-block;
   text-decoration: none;
+  display: inline-block;
   color: #fff;
   text-transform: lowercase;
   font-weight: 300;
@@ -48,12 +47,11 @@
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  /* background-color: #a0d1c3; */
-  border: 2px solid #a0d1c3;
-  color: #a0d1c3;
   text-decoration: none;
-  padding: 1.2rem 2.4rem;
+  color: #a0d1c3;
+  border: 2px solid #a0d1c3;
   border-radius: 9px;
+  padding: 1.2rem 2.4rem;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -83,59 +81,15 @@
   display: none;
 }
 
-/* Sticky navigation */
-
-.sticky .header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 8rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #333;
-  z-index: 999;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.15);
-}
-
-.sticky .section-hero {
-  margin-top: 9.6rem;
-}
-
 /* ****************** */
 /* HERO SECTION */
 /* ****************** */
 
 .section-hero {
-  background-color: #333;
-  color: #fff;
-  padding: 9.6rem 0 9.6rem 0;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 3.2rem 6.4rem;
-}
-
-.hero-title {
-  font-family: "Advent Pro", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 20px;
-}
-
-/* .hero-border {
-  width: 50%;
-  height: 10px;
-  align-self: center;
-  border-top: solid 1px #fff;
-  margin: 0 auto;
-} */
 
 .hero-description {
   font-family: "Comfortaa", sans-serif;
@@ -147,31 +101,9 @@
   margin-bottom: 7.2rem;
 }
 
-.hero-img-box {
-  display: inline-block;
-}
-
-.hero-img {
-  width: 100%;
-  border-radius: 50%;
-}
-
 /* ****************** */
 /* WORK SECTION */
 /* ****************** */
-
-.section-work {
-  height: 100vh;
-  padding: 15rem 0;
-  margin-bottom: 9.6rem;
-}
-
-.description {
-  font-size: 2rem;
-  line-height: 1.8;
-  margin-bottom: 4.8rem;
-  /* text-align: end; */
-}
 
 .work {
   background-color: #fff;
@@ -222,12 +154,6 @@
 /* METHODS SECTION */
 /* ****************** */
 
-.section-methods {
-  height: 100vh;
-  padding: 15rem 0;
-  margin-bottom: 9.6rem;
-}
-
 .grid-diamonds {
   display: grid;
   column-gap: 0;
@@ -269,19 +195,15 @@
   /* transform: rotateZ(45deg); */
 }
 
+.diamond--research:link {
+}
+
 .diamond--research:hover,
 .diamond--synthesis:hover,
 .diamond--ideation:hover,
 .diamond--implementation:hover {
   cursor: pointer;
   transition: all 0.4s;
-}
-
-.diamond--research:hover .text,
-.diamond--synthesis:hover .text,
-.diamond--ideation:hover .text,
-.diamond--implementation:hover .text {
-  color: #fff;
 }
 
 .diamond--research:hover .hide,
@@ -302,23 +224,12 @@
   transform: translateX(-2rem);
 }
 
-.diamond--synthesis:hover,
-.diamond--synthesis:hover ~ .diamond--ideation,
-.diamond--synthesis:hover ~ .diamond--implementation {
-  transform: translateX(2rem);
-  transition: all 0.4s;
-}
-
-.diamond--ideation:hover ~ .diamond--implementation {
-  transform: translateX(2rem);
-  transition: all 0.4s;
-}
-
 .diamond--implementation:hover {
   transform: translateX(2rem);
 }
 
 .diamond--research:active {
+  transform: translateX(-100%);
 }
 
 /* ****************** */
@@ -326,10 +237,7 @@
 /* ****************** */
 
 .section-contact {
-  height: 100vh;
-  padding: 15rem 0;
-  /* padding: 9.6rem 0 9.6rem 0; */
-  margin-bottom: 9.6rem;
+  margin-bottom: 0;
 }
 
 .contacts {

@@ -1,4 +1,14 @@
 /* ****************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* ****************** */
+
+.grid--project {
+  grid-template-columns: 4fr 7fr;
+  column-gap: 9.6rem;
+  align-items: center;
+}
+
+/* ****************** */
 /* NAVIGATION */
 /* ****************** */
 
@@ -141,12 +151,14 @@ section {
   margin-bottom: 2.4rem;
 }
 
-.highlight {
-  font-weight: 600;
-}
-
 .quote {
   font-style: italic;
+}
+
+.flex--mockups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 .list {
