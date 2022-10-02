@@ -195,7 +195,9 @@
   /* transform: rotateZ(45deg); */
 }
 
-.diamond--research:link {
+.diamond--research,
+.diamond--ideation {
+  border-right: solid 1px #333;
 }
 
 .diamond--research:hover,
