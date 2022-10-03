@@ -113,7 +113,6 @@
   overflow: hidden;
   transition: all 0.4s;
   aspect-ratio: 1;
-  /* height: 20.2rem; */
 }
 
 .work-content {
@@ -121,9 +120,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-}
-
-.work-title {
   font-size: 2rem;
   font-weight: 400;
 }
@@ -133,16 +129,12 @@
   height: 100%;
 }
 
-.hide {
-  display: none;
-}
-
 .work:hover {
   transform: translateY(-0.6rem);
   box-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.075);
 }
 
-.work:hover .hide {
+.work:hover .hidden {
   display: block;
 }
 
@@ -169,6 +161,7 @@
 .diamond--synthesis,
 .diamond--ideation,
 .diamond--implementation {
+  width: 100%;
   position: relative;
   text-align: center;
 }
@@ -195,6 +188,11 @@
   /* transform: rotateZ(45deg); */
 }
 
+.diamond--research:link,
+.diamond--research:visited {
+  order: 1;
+}
+
 .diamond--research,
 .diamond--ideation {
   border-right: solid 1px #333;
@@ -208,17 +206,17 @@
   transition: all 0.4s;
 }
 
-.diamond--research:hover .hide,
-.diamond--synthesis:hover .hide,
-.diamond--ideation:hover .hide,
-.diamond--implementation:hover .hide {
+.diamond--research:hover .diamond--research-selected,
+.diamond--synthesis:hover .diamond--synthesis-selected,
+.diamond--ideation:hover .diamond--ideation-selected,
+.diamond--implementation:hover .diamond--implementation-selected {
   display: block;
 }
 
-.diamond--research:hover .initial,
-.diamond--synthesis:hover .initial,
-.diamond--ideation:hover .initial,
-.diamond--implementation:hover .initial {
+.diamond--research:hover .diamond--research-initial,
+.diamond--synthesis:hover .diamond--synthesis-initial,
+.diamond--ideation:hover .diamond--ideation-initial,
+.diamond--implementation:hover .diamond--implementation-initial {
   display: none;
 }
 
@@ -230,8 +228,14 @@
   transform: translateX(2rem);
 }
 
-.diamond--research:active {
-  transform: translateX(-100%);
+.diamond--research:active ~ .hidden {
+  display: block;
+}
+
+.tasks {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 /* ****************** */
@@ -245,34 +249,27 @@
 .contacts {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   gap: 4.8rem;
 }
 
-.contact:link,
-.contact:visited {
-  color: #fff;
+.email:link,
+.email:visited {
   text-decoration: none;
+  color: #fff;
   font-family: "Advent Pro", sans-serif;
   font-size: 6.4rem;
   font-weight: 500;
   letter-spacing: 10px;
   transition: all 0.3s;
-  margin-top: 5.6rem;
-  line-height: 2;
+  margin-top: 7.2rem;
 }
 
-.contact:hover,
-.contact:active {
+.email:hover,
+.email:active {
   color: #90bcb0;
   transform: translateY(-2px);
   text-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.2);
 }
-
-/* .email {
-  inline-size: 34rem;
-  overflow-wrap: break-word;
-} */
 
 /* ****************** */
 /* FOOTER */
@@ -280,7 +277,6 @@
 
 .footer {
   padding: 4.8rem 0;
-  /* border-top: 1px solid #eee; */
 }
 
 .footer .container {

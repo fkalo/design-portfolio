@@ -73,17 +73,17 @@ body {
 /* GENERAL REUSABLE COMPONENTS */
 /* ****************** */
 
+.section {
+  height: 100vh;
+  padding: 12rem 0;
+  margin-bottom: 8rem;
+}
+
 .container {
   /* usually 1140px or 1200px */
   max-width: 140rem;
   padding: 0 6.4rem;
   margin: 0 auto;
-}
-
-.section {
-  height: 100vh;
-  padding: 12rem 0;
-  margin-bottom: 8rem;
 }
 
 .grid {
@@ -107,6 +107,7 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+  padding: 0 34rem;
 }
 
 .grid--5-cols {
@@ -114,8 +115,13 @@ body {
   column-gap: 3.2rem;
 }
 
+.grid--five-cols {
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  /* padding: 0 24rem; */
+}
+
 .grid--6-cols {
-  grid-template-columns: 3fr 2fr 2fr 2fr 2fr 3fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
 }
 
 .grid--center-v {
@@ -176,4 +182,8 @@ body {
 
 .highlight {
   font-weight: 600;
+}
+
+.hidden {
+  display: none;
 }
