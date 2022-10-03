@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
 
   /* Because we want the header to be sticky later */
   height: 9.6rem;
@@ -32,8 +31,8 @@
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  display: inline-block;
   text-decoration: none;
+  display: inline-block;
   color: #fff;
   text-transform: lowercase;
   font-weight: 300;
@@ -48,12 +47,11 @@
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  /* background-color: #a0d1c3; */
-  border: 2px solid #a0d1c3;
-  color: #a0d1c3;
   text-decoration: none;
-  padding: 1.2rem 2.4rem;
+  color: #a0d1c3;
+  border: 2px solid #a0d1c3;
   border-radius: 9px;
+  padding: 1.2rem 2.4rem;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -76,30 +74,11 @@
 .icon-mobile-nav {
   height: 4.8rem;
   width: 4.8rem;
-  color: #333;
+  color: #fff;
 }
 
 .icon-mobile-nav[name="close-outline"] {
   display: none;
-}
-
-/* Sticky navigation */
-
-.sticky .header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 8rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #333;
-  z-index: 999;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.15);
-}
-
-.sticky .section-hero {
-  margin-top: 9.6rem;
 }
 
 /* ****************** */
@@ -107,35 +86,10 @@
 /* ****************** */
 
 .section-hero {
-  background-color: #333;
-  color: #fff;
-  padding: 9.6rem 0 9.6rem 0;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 3.2rem 6.4rem;
-}
-
-.hero-title {
-  font-family: "Advent Pro", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 20px;
-}
-
-/* .hero-border {
-  width: 50%;
-  height: 10px;
-  align-self: center;
-  border-top: solid 1px #fff;
-  margin: 0 auto;
-} */
 
 .hero-description {
   font-family: "Comfortaa", sans-serif;
@@ -147,31 +101,9 @@
   margin-bottom: 7.2rem;
 }
 
-.hero-img-box {
-  display: inline-block;
-}
-
-.hero-img {
-  width: 100%;
-  border-radius: 50%;
-}
-
 /* ****************** */
 /* WORK SECTION */
 /* ****************** */
-
-.section-work {
-  height: 100vh;
-  padding: 15rem 0;
-  margin-bottom: 9.6rem;
-}
-
-.description {
-  font-size: 2rem;
-  line-height: 1.8;
-  margin-bottom: 6.4rem;
-  /* text-align: end; */
-}
 
 .work {
   background-color: #fff;
@@ -222,53 +154,84 @@
 /* METHODS SECTION */
 /* ****************** */
 
-.section-methods {
-  height: 100vh;
-  padding: 15rem 0;
-  margin-bottom: 9.6rem;
-}
-
 .grid-diamonds {
   display: grid;
-  row-gap: 6.4rem;
+  column-gap: 0;
   /* max-width: 100rem; */
 }
 
 .diamond {
-  width: 0;
-  height: 0;
-  border: solid 20rem;
-  border-color: transparent transparent #fff transparent;
-  /* position: absolute; */
+  width: 100%;
   transition: all 0.4s;
 }
 
-.diamond:hover {
-  transform: translateY(-6rem);
+.diamond--research,
+.diamond--synthesis,
+.diamond--ideation,
+.diamond--implementation {
+  position: relative;
+  text-align: center;
 }
 
-.diamond.odd {
-  transform: rotateZ(-90deg);
+.text {
+  font-size: 1.8rem;
 }
 
-.diamond.even {
-  transform: rotateZ(90deg);
+.text--odd {
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  /* transform: rotateZ(-45deg); */
 }
 
-.diamond-research {
-  left: 20rem;
+.text--even {
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  /* transform: rotateZ(45deg); */
 }
 
-.diamond-synthesis {
-  left: 60rem;
+.diamond--research,
+.diamond--ideation {
+  border-right: solid 1px #333;
 }
 
-.diamond-ideation {
-  left: 60rem;
+.diamond--research:hover,
+.diamond--synthesis:hover,
+.diamond--ideation:hover,
+.diamond--implementation:hover {
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
-.diamond-implementation {
-  left: 100rem;
+.diamond--research:hover .hide,
+.diamond--synthesis:hover .hide,
+.diamond--ideation:hover .hide,
+.diamond--implementation:hover .hide {
+  display: block;
+}
+
+.diamond--research:hover .initial,
+.diamond--synthesis:hover .initial,
+.diamond--ideation:hover .initial,
+.diamond--implementation:hover .initial {
+  display: none;
+}
+
+.diamond--research:hover {
+  transform: translateX(-2rem);
+}
+
+.diamond--implementation:hover {
+  transform: translateX(2rem);
+}
+
+.diamond--research:active {
+  transform: translateX(-100%);
 }
 
 /* ****************** */
@@ -276,10 +239,7 @@
 /* ****************** */
 
 .section-contact {
-  height: 100vh;
-  padding: 15rem 0;
-  /* padding: 9.6rem 0 9.6rem 0; */
-  margin-bottom: 9.6rem;
+  margin-bottom: 0;
 }
 
 .contacts {

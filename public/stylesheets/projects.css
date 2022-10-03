@@ -1,4 +1,14 @@
 /* ****************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* ****************** */
+
+.grid--project {
+  grid-template-columns: 4fr 7fr;
+  column-gap: 9.6rem;
+  align-items: center;
+}
+
+/* ****************** */
 /* NAVIGATION */
 /* ****************** */
 
@@ -20,10 +30,11 @@
 
 .pager {
   position: fixed;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
-  font-size: 1.6rem;
-  font-weight: 300;
+  font-size: 1.7rem;
+  font-weight: 200;
+  letter-spacing: 1.3px;
 }
 
 .left {
@@ -47,18 +58,18 @@
 
 .left-text {
   align-self: center;
-  width: 8.6rem;
   transform: rotateZ(-90deg);
+  margin-left: -40%;
+  margin-right: -100%;
   text-align: center;
-  margin-left: 6.4rem;
 }
 
 .right-text {
-  transform: rotateZ(90deg);
   align-self: center;
-  width: 8.6rem;
+  transform: rotateZ(90deg);
+  margin-left: -160%;
+  margin-right: -100%;
   text-align: center;
-  margin-left: -6.4rem;
 }
 
 /* ****************** */
@@ -140,12 +151,14 @@ section {
   margin-bottom: 2.4rem;
 }
 
-.highlight {
-  font-weight: 600;
-}
-
 .quote {
   font-style: italic;
+}
+
+.flex--mockups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 .list {

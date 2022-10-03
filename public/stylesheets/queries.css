@@ -1,11 +1,11 @@
-/* rem and em do NOT depend on hmtl font-size in media queries!
+/* rem and em do NOT depend on html font-size in media queries!
 Instead, 1rem = 1em = 16px */
 
 /* ****************** */
 /* BELOW 1344px (84em) - Smaller desktops */
 /* ****************** */
 
-@media (max-width: 84em) {
+/* @media (max-width: 84em) {
   .hero {
     max-width: 120rem;
   }
@@ -17,7 +17,7 @@ Instead, 1rem = 1em = 16px */
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
 /* ****************** */
 /* BELOW 1200px (75em) - Landscape tablets */

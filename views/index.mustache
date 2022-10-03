@@ -70,20 +70,19 @@
     </header>
 
     <main>
-        <section class="section-hero" id="hero">
-            <div class="hero">
+        <section class="section section-hero">
+            <div class="container">
                 <div class="hero-text-box">
-                    <h1 class="hero-title heading-primary">Fruzsina Kaló</h1>
-                    <!-- <div class="hero-border"></div> -->
+                    <p class="heading-primary">Fruzsina Kaló</p>
                     <p class="hero-description">product designer</p>
                 </div>
             </div>
         </section>
 
-        <section class="section-work" id="work">
-            <div class="container section-heading">
-                <h2 class="heading-secondary">Who am I?</h2>
-                <span class="subheading">get to know me through my work</span>
+        <section class="section" id="work">
+            <div class="container">
+                <p class="heading-secondary">Who am I?</p>
+                <p class="subheading">get to know me through my work</p>
             </div>
 
             <div class="container">
@@ -147,28 +146,59 @@
             </div>
         </section>
 
-        <section class="section-methods" id="methods">
+        <section class="section" id="methods">
             <div class="container section-heading">
-                <h2 class="heading-secondary">How do I do it?</h2>
-                <span class="subheading">let me show you my methods</span>
+                <p class="heading-secondary">How do I do it?</p>
+                <p class="subheading">let me show you my methods</p>
             </div>
 
             <div class="container">
                 <div class="description">You must've heard the term <span>"Design Thinking"</span> <span>"Double Diamond"</span></div>
             </div>
 
-            <div class="container grid-diamonds grid--4-cols margin-bottom-md">
-                <div class="diamond diamond-research odd"></div>
-                <div class="diamond diamond-synthesis even"></div>
-                <div class="diamond diamond-ideation odd"></div>
-                <div class="diamond diamond-implementation even"></div>
+            <div class="container grid-diamonds grid--6-cols margin-bottom-md">
+                <div class="hide--on-hover"></div>
+
+                <div class="diamond--research">
+                    <img class="diamond initial" src="./images/diamonds/Research.png"
+                            alt="double diamond method research phase" />
+                    <img class="diamond hide" src="./images/diamonds/Research_accent.png"
+                            alt="double diamond method research phase" />
+                    <span class="text text--odd">research</span>
+                </div>
+
+                {{! <div class="show--on-hover">kiskacsa</div> }}
+
+                <div class="diamond--synthesis">
+                    <img class="diamond initial" src="./images/diamonds/Synthesis.png"
+                            alt="double diamond method synthesis phase" />
+                    <img class="diamond hide" src="./images/diamonds/Synthesis_accent.png"
+                            alt="double diamond method synthesis phase" />
+                    <span class="text text--even">synthesis</span>
+                </div>
+
+                <div class="diamond--ideation">
+                    <img class="diamond initial" src="./images/diamonds/Ideation.png"
+                            alt="double diamond method ideation phase" />
+                    <img class="diamond hide" src="./images/diamonds/Ideation_accent.png"
+                            alt="double diamond method ideation phase" />
+                    <span class="text text--odd">ideation</span>
+                </div>
+
+                <div class="diamond--implementation">
+                    <img class="diamond initial" src="./images/diamonds/Implementation.png"
+                            alt="double diamond method implementation phase" />
+                    <img class="diamond hide" src="./images/diamonds/Implementation_accent.png"
+                            alt="double diamond method implementation phase" />
+                    <span class="text text--even text--implementation">implementation</span>
+                </div>
             </div>
         </section>
 
-        <section class="section-contact" id="contact">
+        <section class="section section-contact" id="contact">
             <div class="container section-heading">
-                <h2 class="heading-secondary">What's next?</h2>
-                <span class="subheading">get in touch to discuss</span>
+                <p class="heading-secondary">What's next?</p>
+                <p class="subheading">get in touch to discuss</p>
             </div>
 
             <div class="container contacts">
