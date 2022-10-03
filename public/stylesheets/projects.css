@@ -8,19 +8,31 @@
   align-items: center;
 }
 
+section {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.flex--vertical {
+  flex-direction: column;
+}
+
 /* ****************** */
-/* NAVIGATION */
+/* PROJECT NAVIGATION */
 /* ****************** */
 
 .project-nav {
   position: relative;
-  /* text-transform: uppercase; */
 }
 
 .project-nav a:link,
 .project-nav a:visited {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
 }
 
 .project-nav a:hover,
@@ -53,38 +65,31 @@
   height: 12.8rem;
   border: solid 1px #555;
   border-radius: 50%;
-  white-space: nowrap;
 }
 
-.left-text {
+.nav-text {
   align-self: center;
+  text-align: center;
+}
+
+.nav-text--left {
   transform: rotateZ(-90deg);
   margin-left: -40%;
   margin-right: -100%;
-  text-align: center;
 }
 
-.right-text {
-  align-self: center;
+.nav-text--right {
   transform: rotateZ(90deg);
   margin-left: -160%;
   margin-right: -100%;
-  text-align: center;
 }
 
 /* ****************** */
 /* PROJECT HERO SECTION */
 /* ****************** */
 
-section {
-  height: 100vh;
-}
-
 .section-project-intro {
   height: 90vh;
-  background-color: #333;
-  color: #fff;
-  padding: 9.6rem 0 9.6rem 0;
   max-width: 140rem;
   margin: 0 auto;
   display: flex;
@@ -92,17 +97,13 @@ section {
   align-items: center;
 }
 
-.project-intro-box {
+.project-intro {
   max-width: 82rem;
   justify-content: center;
-}
-
-.project-intro {
   font-family: "Advent Pro", sans-serif;
   font-size: 7.2rem;
   font-weight: 700;
   text-align: center;
-  /* text-transform: uppercase; */
   letter-spacing: 10px;
 }
 
@@ -141,6 +142,10 @@ section {
   object-fit: cover;
   box-shadow: 0 1rem 3.6rem rgba(0, 0, 0, 0.365);
 }
+
+/* ****************** */
+/* TEXT TYPES */
+/* ****************** */
 
 .content {
   line-height: 1.35;
@@ -207,6 +212,10 @@ section {
 .site-link:active {
   color: #90bcb0;
 }
+
+/* ****************** */
+/* IMAGE TYPES */
+/* ****************** */
 
 .project-image {
   overflow: hidden;
