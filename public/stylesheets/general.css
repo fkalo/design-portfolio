@@ -100,6 +100,15 @@ body {
   align-items: center;
 }
 
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+  display: inline-grid;
+  max-height: 4rem;
+  column-gap: 1rem;
+  overflow: hidden;
+  margin-bottom: 4.8rem;
+}
+
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
@@ -162,7 +171,7 @@ body {
 
 .description {
   font-size: 2.4rem;
-  line-height: 1.8;
+  line-height: 4.8rem;
   margin-bottom: 4.8rem;
 }
 
