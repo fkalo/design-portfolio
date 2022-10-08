@@ -3,7 +3,7 @@
 --- 01 TYPOGRAPHY SYSTEM
 
 - FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 64 / 72 / 86 / 98
 
 - FONT WEIGHTS
 Default: 400
@@ -74,24 +74,18 @@ body {
 /* ****************** */
 
 .section {
-  height: 100vh;
   padding: 12rem 0;
   margin-bottom: 8rem;
 }
 
 .container {
-  /* usually 1140px or 1200px */
-  max-width: 140rem;
+  max-width: 130rem;
   padding: 0 6.4rem;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
-}
-
-.grid:not(:last-child) {
-  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -178,10 +172,6 @@ body {
 
 .center-text {
   text-align: center;
-}
-
-.highlight {
-  font-weight: 600;
 }
 
 .hidden {

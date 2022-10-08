@@ -290,6 +290,11 @@
   align-self: center;
 }
 
+.logo {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
 .copyright {
   font-size: 1.4rem;
   line-height: 1.6;

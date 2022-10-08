@@ -2,60 +2,103 @@
 Instead, 1rem = 1em = 16px */
 
 /* ****************** */
-/* BELOW 1344px (84em) - Smaller desktops */
+/* BELOW 1440px (90em)
 /* ****************** */
 
-/* @media (max-width: 84em) {
-  .hero {
+@media (max-width: 90em) {
+  body {
+    font-size: 2rem;
+  }
+
+  .container {
     max-width: 120rem;
   }
 
-  .heading-primary {
-    font-size: 4.4rem;
+  .content:not(:last-child) {
+    margin-bottom: 1.8rem;
   }
 
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
+  .grid--project {
+    column-gap: 8rem;
   }
-} */
+
+  .video {
+    height: 36rem;
+  }
+}
+
+/* ****************** */
+/* BELOW 1344px (84em) - Smaller desktops */
+/* ****************** */
+
+@media (max-width: 84em) {
+  html {
+    /* 9px */
+    font-size: 56.25%;
+  }
+
+  .content:not(:last-child) {
+    margin-bottom: 1.4rem;
+  }
+
+  .grid--project {
+    column-gap: 7.2rem;
+  }
+
+  .project-summary {
+    font-size: 1.4rem;
+  }
+
+  .video {
+    height: 30rem;
+  }
+}
 
 /* ****************** */
 /* BELOW 1200px (75em) - Landscape tablets */
 /* ****************** */
 
 @media (max-width: 75em) {
-  html {
-    /* 9px */
-    font-size: 56.25%;
+  body {
+    font-size: 1.8rem;
   }
 
-  .grid {
-    column-gap: 4.8rem;
-    row-gap: 6.4rem;
+  .pager {
+    font-size: 1.4rem;
   }
 
-  .heading-secondary {
-    font-size: 3.6rem;
+  .pager-circle {
+    width: 10.8rem;
+    height: 10.8rem;
   }
 
-  .heading-tertiary {
-    font-size: 2.4rem;
+  .container {
+    max-width: 100rem;
   }
 
-  .header {
-    padding: 0 3.2rem;
+  .project-intro {
+    max-width: 76rem;
+    font-size: 6.4rem;
   }
 
-  .main-nav-list {
-    gap: 3.2rem;
+  .heading-project {
+    font-size: 4.2rem;
   }
 
-  .hero {
-    gap: 4.8rem;
+  .project-summary {
+    font-size: 1.2rem;
   }
 
-  .testimonials-container {
-    padding: 9.6rem 3.2rem;
+  .content:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+
+  .grid--project {
+    column-gap: 6.4rem;
+  }
+
+  .video {
+    height: 26rem;
   }
 }
 
@@ -69,66 +112,58 @@ Instead, 1rem = 1em = 16px */
     font-size: 50%;
   }
 
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 0 9.6rem;
-    gap: 6.4rem;
+  body {
+    font-size: 1.6rem;
   }
 
-  .hero-text-box,
-  .hero-img-box {
-    text-align: center;
+  .pager {
+    font-size: 1.2rem;
   }
 
-  .hero-img {
-    width: 60%;
+  .pager-circle {
+    width: 10.8rem;
+    height: 10.8rem;
   }
 
-  .delivered-meals {
-    justify-content: center;
-    margin-top: 3.2rem;
+  .container {
+    max-width: 90rem;
   }
 
-  .logos img {
-    height: 2.4rem;
+  .project-intro {
+    max-width: 66rem;
+    font-size: 5.2rem;
   }
 
-  .step-number {
-    font-size: 7.4rem;
+  .heading-project {
+    font-size: 3.6rem;
   }
 
-  .meal-content {
-    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  .project-summary {
+    font-size: 1.1rem;
   }
 
-  .section-testimonials {
-    grid-template-columns: 1fr;
+  .subheading-project {
+    font-size: 2.8rem;
   }
 
-  .gallery {
-    grid-template-columns: repeat(6, 1fr);
+  .content:not(:last-child) {
+    margin-bottom: 0.8rem;
   }
 
-  .cta {
-    /* 3/5 = 60% + 2/5 = 40% */
-    grid-template-columns: 3fr 2fr;
+  .grid--project {
+    column-gap: 4rem;
   }
 
-  .cta-form {
-    grid-template-columns: 1fr;
+  .footer .container {
+    gap: 1.2rem;
   }
 
-  .btn--form {
-    margin-top: 1.2rem;
-  }
-
-  .btn-mobile-nav {
-    display: block;
-    z-index: 9999;
+  .copyright {
+    font-size: 1.2rem;
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     /* For safari: based on caniuse.com info */
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -187,37 +222,59 @@ Instead, 1rem = 1em = 16px */
 /* ****************** */
 
 @media (max-width: 48em) {
-  .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .diets {
-    grid-column: 1 / -1;
-    justify-self: center;
+  body {
+    font-size: 1.4rem;
   }
 
-  .heading-secondary {
-    margin-bottom: 4.8rem;
+  .pager {
+    font-size: 1.1rem;
   }
 
-  .pricing-plan {
-    width: 100%;
+  .pager-circle {
+    width: 8.2rem;
+    height: 8.2rem;
   }
 
-  .grid--footer {
-    grid-template-columns: repeat(6, 1fr);
+  .container {
+    max-width: 90rem;
   }
 
-  .logo-col,
-  .address-col {
-    grid-column: span 3;
+  .project-intro {
+    max-width: 56rem;
+    font-size: 4.6rem;
   }
 
-  .nav-col {
-    grid-row: 1;
-    grid-column: span 2;
-    margin-bottom: 3.2rem;
+  .heading-project {
+    font-size: 2.6rem;
+  }
+
+  .subheading-project {
+    font-size: 1.8rem;
+  }
+
+  .content:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  .grid--project {
+    column-gap: 3.2rem;
+  }
+
+  .footer .container {
+    gap: 1.2rem;
+  }
+
+  .logo {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .copyright {
+    font-size: 1.1rem;
   }
 }
 

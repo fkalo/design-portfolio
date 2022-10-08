@@ -2,14 +2,14 @@
 /* GENERAL REUSABLE COMPONENTS */
 /* ****************** */
 
+section {
+  height: 100vh;
+}
+
 .grid--project {
   grid-template-columns: 4fr 7fr;
   column-gap: 9.6rem;
   align-items: center;
-}
-
-section {
-  height: 100vh;
 }
 
 .flex {
@@ -44,7 +44,7 @@ section {
   position: fixed;
   top: 45%;
   transform: translateY(-50%);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 200;
   letter-spacing: 1.3px;
 }
@@ -90,7 +90,6 @@ section {
 
 .section-project-intro {
   height: 90vh;
-  max-width: 140rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -115,36 +114,30 @@ section {
   font-size: 4.8rem;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 2.4rem;
   font-weight: 800;
   letter-spacing: 1.5px;
+  margin-bottom: 2.4rem;
 }
 
 .project-summary {
   font-size: 1.6rem;
-  text-transform: uppercase;
   line-height: 1.6;
+  text-transform: uppercase;
+  font-weight: 200;
   letter-spacing: 2px;
   margin-bottom: 6.4rem;
-  font-weight: 200;
 }
 
 .subheading-project {
   font-size: 3.6rem;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 1.6rem;
   font-weight: 800;
-}
-
-.thumbnail {
-  width: 100%;
-  object-fit: cover;
-  box-shadow: 0 1rem 3.6rem rgba(0, 0, 0, 0.365);
+  margin-bottom: 1.6rem;
 }
 
 /* ****************** */
-/* TEXT TYPES */
+/* TEXT CONTENT */
 /* ****************** */
 
 .content {
@@ -156,14 +149,12 @@ section {
   margin-bottom: 2.4rem;
 }
 
-.quote {
-  font-style: italic;
+.highlight {
+  font-weight: 600;
 }
 
-.flex--mockups {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
+.quote {
+  font-style: italic;
 }
 
 .list {
@@ -174,31 +165,28 @@ section {
 .list-item {
   display: list-item;
   list-style: "–  ";
-  font-size: 2.4rem;
-  line-height: 1.35;
-  font-weight: 200;
 }
 
 .site {
-  padding: 9.6rem 0 9.6rem 0;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  padding: 9.6rem 0 9.6rem 0;
 }
 
 .live-site {
   display: block;
-  margin: 0 auto;
   letter-spacing: 1.5px;
+  margin: 0 auto;
 }
 
 .site-intro {
-  line-height: 1.8;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
   text-align: center;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
 }
 
 .site-link:link,
@@ -214,14 +202,26 @@ section {
 }
 
 /* ****************** */
-/* IMAGE TYPES */
+/* MEDIA CONTENT */
 /* ****************** */
+
+.thumbnail {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 1rem 3.6rem rgba(0, 0, 0, 0.2);
+}
 
 .project-image {
   overflow: hidden;
   max-height: 600px;
   max-width: 100%;
   box-shadow: 0 1rem 3.6rem rgba(0, 0, 0, 0.2);
+}
+
+.flex--mockups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 .project-mockup {
@@ -232,8 +232,7 @@ section {
 
 .video {
   width: 100%;
-  height: 50%;
+  height: 40rem;
   border-radius: 1rem;
-  box-shadow: 0 1rem 3.6rem rgba(0, 0, 0, 0.365);
-  /* TO FIX */
+  box-shadow: 0 1rem 3.6rem rgba(0, 0, 0, 0.2);
 }
