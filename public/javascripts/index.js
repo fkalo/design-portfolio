@@ -28,7 +28,6 @@ $(document).ready(function(){
   // Smooth scrolling animation
 
   const allLinks = document.querySelectorAll("smooth:link");
-  console.log(allLinks);
 
   allLinks.forEach(function (link) {
     link.addEventListener("click", function (e) {
