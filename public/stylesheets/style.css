@@ -89,6 +89,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 24rem 0;
 }
 
 .hero-description {
@@ -129,16 +130,19 @@
   height: 100%;
 }
 
-.work:hover {
+.work:hover,
+.work:active {
   transform: translateY(-0.6rem);
   box-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.075);
 }
 
-.work:hover .hidden {
+.work:hover .hidden,
+.work:active .hidden {
   display: block;
 }
 
-.work:hover .work-content {
+.work:hover .work-content,
+.work:active .work-content {
   display: none;
 }
 
@@ -152,14 +156,14 @@
 
 .work-word-1 {
   animation-name: pushDown;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
 
 .work-word-2 {
   animation-name: changeColor;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
@@ -322,7 +326,7 @@
 /* CONTACT SECTION */
 /* ****************** */
 
-.section-contact {
+.section--contact {
   margin-bottom: 12.8rem;
 }
 

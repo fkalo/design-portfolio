@@ -6,6 +6,12 @@ section {
   height: 100vh;
 }
 
+.container--project {
+  max-width: 130rem;
+  padding: 0 6.4rem;
+  margin: 0 auto;
+}
+
 .grid--project {
   grid-template-columns: 4fr 7fr;
   column-gap: 9.6rem;
@@ -22,8 +28,24 @@ section {
 }
 
 /* ****************** */
-/* PROJECT NAVIGATION */
+/* NAVIGATION */
 /* ****************** */
+
+.logo--outline,
+.logo--hover {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.logo:hover .logo--hover,
+.logo:active .logo--hover {
+  display: block;
+}
+
+.logo:hover .logo--outline,
+.logo:active .logo--outline {
+  display: none;
+}
 
 .project-nav {
   position: relative;
