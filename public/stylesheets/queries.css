@@ -6,20 +6,22 @@ Instead, 1rem = 1em = 16px */
 /* ****************** */
 
 @media (max-width: 90em) {
+  /* general.css */
   body {
     font-size: 2rem;
   }
 
-  .container {
+  /* projects.css */
+  .container--project {
     max-width: 120rem;
-  }
-
-  .content:not(:last-child) {
-    margin-bottom: 1.8rem;
   }
 
   .grid--project {
     column-gap: 8rem;
+  }
+
+  .content:not(:last-child) {
+    margin-bottom: 1.8rem;
   }
 
   .video {
@@ -32,15 +34,13 @@ Instead, 1rem = 1em = 16px */
 /* ****************** */
 
 @media (max-width: 84em) {
+  /* general.css */
   html {
     /* 9px */
     font-size: 56.25%;
   }
 
-  .content:not(:last-child) {
-    margin-bottom: 1.4rem;
-  }
-
+  /* projects.css */
   .grid--project {
     column-gap: 7.2rem;
   }
@@ -49,8 +49,12 @@ Instead, 1rem = 1em = 16px */
     font-size: 1.4rem;
   }
 
+  .content:not(:last-child) {
+    margin-bottom: 1.4rem;
+  }
+
   .video {
-    height: 30rem;
+    height: 35rem;
   }
 }
 
@@ -59,8 +63,22 @@ Instead, 1rem = 1em = 16px */
 /* ****************** */
 
 @media (max-width: 75em) {
+  /* general.css */
   body {
     font-size: 1.8rem;
+  }
+
+  .grid--3-cols {
+    gap: 1rem;
+  }
+
+  /* projects.css */
+  .container--project {
+    max-width: 100rem;
+  }
+
+  .grid--project {
+    column-gap: 6.4rem;
   }
 
   .pager {
@@ -72,33 +90,29 @@ Instead, 1rem = 1em = 16px */
     height: 10.8rem;
   }
 
-  .container {
-    max-width: 100rem;
-  }
-
   .project-intro {
     max-width: 76rem;
     font-size: 6.4rem;
   }
 
   .heading-project {
-    font-size: 4.2rem;
+    font-size: 3.6rem;
   }
 
   .project-summary {
     font-size: 1.2rem;
   }
 
+  .subheading-project {
+    font-size: 2.7rem;
+  }
+
   .content:not(:last-child) {
     margin-bottom: 1.2rem;
   }
 
-  .grid--project {
-    column-gap: 6.4rem;
-  }
-
   .video {
-    height: 26rem;
+    height: 29rem;
   }
 }
 
@@ -107,6 +121,7 @@ Instead, 1rem = 1em = 16px */
 /* ****************** */
 
 @media (max-width: 59em) {
+  /* general.css */
   html {
     /* 8px */
     font-size: 50%;
@@ -116,17 +131,24 @@ Instead, 1rem = 1em = 16px */
     font-size: 1.6rem;
   }
 
-  .pager {
-    font-size: 1.2rem;
+  /* projects.css */
+
+  section {
+    height: 100vh;
+  }
+
+  .container--project {
+    max-width: 88rem;
+  }
+
+  .grid--project {
+    grid-template-columns: 1fr;
+    column-gap: 4rem;
   }
 
   .pager-circle {
-    width: 10.8rem;
-    height: 10.8rem;
-  }
-
-  .container {
-    max-width: 90rem;
+    width: 10.5rem;
+    height: 10.5rem;
   }
 
   .project-intro {
@@ -143,15 +165,11 @@ Instead, 1rem = 1em = 16px */
   }
 
   .subheading-project {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .content:not(:last-child) {
     margin-bottom: 0.8rem;
-  }
-
-  .grid--project {
-    column-gap: 4rem;
   }
 
   .footer .container {
@@ -160,6 +178,10 @@ Instead, 1rem = 1em = 16px */
 
   .copyright {
     font-size: 1.2rem;
+  }
+
+  .video {
+    height: 26rem;
   }
 
   .main-nav {

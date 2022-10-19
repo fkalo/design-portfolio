@@ -2,11 +2,8 @@
 /* GENERAL REUSABLE COMPONENTS */
 /* ****************** */
 
-section {
-  height: 100vh;
-}
-
 .container--project {
+  height: 100vh;
   max-width: 130rem;
   padding: 0 6.4rem;
   margin: 0 auto;
