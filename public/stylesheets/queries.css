@@ -6,11 +6,6 @@ Instead, 1rem = 1em = 16px */
 /* ****************** */
 
 @media (max-width: 90em) {
-  /* general.css */
-  body {
-    font-size: 2rem;
-  }
-
   /* projects.css */
   .container--project {
     max-width: 120rem;
@@ -18,6 +13,10 @@ Instead, 1rem = 1em = 16px */
 
   .grid--project {
     column-gap: 8rem;
+  }
+
+  .heading-project {
+    font-size: 4.2rem;
   }
 
   .content:not(:last-child) {
@@ -35,18 +34,25 @@ Instead, 1rem = 1em = 16px */
 
 @media (max-width: 84em) {
   /* general.css */
-  html {
-    /* 9px */
-    font-size: 56.25%;
+  body {
+    font-size: 2rem;
   }
 
   /* projects.css */
+  .container--project {
+    max-width: 110rem;
+  }
+
   .grid--project {
     column-gap: 7.2rem;
   }
 
-  .project-summary {
-    font-size: 1.4rem;
+  .heading-project {
+    font-size: 3.8rem;
+  }
+
+  .subheading-project {
+    font-size: 3rem;
   }
 
   .content:not(:last-child) {
@@ -54,7 +60,7 @@ Instead, 1rem = 1em = 16px */
   }
 
   .video {
-    height: 35rem;
+    height: 32rem;
   }
 }
 
@@ -69,16 +75,16 @@ Instead, 1rem = 1em = 16px */
   }
 
   .grid--3-cols {
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* projects.css */
   .container--project {
-    max-width: 100rem;
+    max-width: 90rem;
   }
 
   .grid--project {
-    column-gap: 6.4rem;
+    column-gap: 5.6rem;
   }
 
   .pager {
@@ -96,7 +102,7 @@ Instead, 1rem = 1em = 16px */
   }
 
   .heading-project {
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
 
   .project-summary {
@@ -104,74 +110,39 @@ Instead, 1rem = 1em = 16px */
   }
 
   .subheading-project {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
   }
 
   .content:not(:last-child) {
     margin-bottom: 1.2rem;
   }
 
+  .site-link:link,
+  .site-link:visited {
+    color: #90bcb0;
+  }
+
   .video {
-    height: 29rem;
+    height: 26rem;
   }
 }
 
 /* ****************** */
-/* BELOW 944px (59em) - Tablets */
+/* BELOW 944px (59em) - Tablets, portrait mode */
 /* ****************** */
 
 @media (max-width: 59em) {
   /* general.css */
   html {
-    /* 8px */
-    font-size: 50%;
+    /* 9px */
+    font-size: 56.25%;
   }
 
-  body {
-    font-size: 1.6rem;
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  /* projects.css */
-
-  section {
-    height: 100vh;
-  }
-
-  .container--project {
-    max-width: 88rem;
-  }
-
-  .grid--project {
-    grid-template-columns: 1fr;
-    column-gap: 4rem;
-  }
-
-  .pager-circle {
-    width: 10.5rem;
-    height: 10.5rem;
-  }
-
-  .project-intro {
-    max-width: 66rem;
-    font-size: 5.2rem;
-  }
-
-  .heading-project {
-    font-size: 3.6rem;
-  }
-
-  .project-summary {
-    font-size: 1.1rem;
-  }
-
-  .subheading-project {
-    font-size: 2.4rem;
-  }
-
-  .content:not(:last-child) {
-    margin-bottom: 0.8rem;
-  }
-
+  /* style.css */
   .footer .container {
     gap: 1.2rem;
   }
@@ -180,12 +151,95 @@ Instead, 1rem = 1em = 16px */
     font-size: 1.2rem;
   }
 
+  /* projects.css */
+  .container--project {
+    max-width: 75rem;
+  }
+
+  .grid--project {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--project > div:nth-child(1) {
+    align-self: end;
+    margin-bottom: 6.4rem;
+  }
+
+  .grid--project > div:nth-child(2),
+  .grid--project > img:not(.thumbnail) {
+    align-self: start;
+    margin-bottom: 6.4rem;
+  }
+
+  .project-intro {
+    max-width: 66rem;
+    font-size: 5.2rem;
+  }
+
+  .heading-project {
+    font-size: 4.8rem;
+  }
+
+  .project-summary {
+    font-size: 1.6rem;
+  }
+
+  .subheading-project {
+    font-size: 3.6rem;
+  }
+
+  .adeslogo > .grid--project > div:nth-child(2),
+  .adeslogo > .grid--project > .project-mockup:nth-child(2),
+  .zone > .grid--project > .project-image:nth-child(2):not(.sub),
+  .zone > .grid--project > .project-mockup:nth-child(2),
+  .omnifood > .grid--project > div:nth-child(2),
+  .omnifood > .grid--project > .project-image:nth-child(2),
+  .omnifood > .grid--project > .project-mockup:nth-child(2),
+  .homely > .grid--project > .project-image:nth-child(2),
+  .homely > .grid--project > .project-mockup:nth-child(2),
+  .homely > .grid--project > .flex--mockups:nth-child(2),
+  .cottonpasta > .grid--project > .flex:nth-child(2),
+  .cottonpasta > .grid--project > .project-image:nth-child(2),
+  .cottonpasta > .grid--project > .project-mockup:nth-child(2) {
+    grid-row: 1;
+    align-self: end;
+  }
+
+  .adeslogo > .grid--project > div:nth-child(1):not(.subheading-project),
+  .adeslogo > .grid--project > p:nth-child(1),
+  .zone > .grid--project > div:nth-child(1):not(.subheading-project, .top),
+  .zone > .grid--project > p:nth-child(1),
+  .omnifood > .grid--project > div:nth-child(1):not(.subheading-project),
+  .omnifood > .grid--project > p:nth-child(1),
+  .homely > .grid--project > div:nth-child(1):not(.subheading-project),
+  .homely > .grid--project > p:nth-child(1),
+  .cottonpasta > .grid--project > div:nth-child(1):not(.subheading-project),
+  .cottonpasta > .grid--project > p:nth-child(1) {
+    grid-row: 2;
+    align-self: start;
+  }
+
+  .content:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  .site {
+    display: grid;
+  }
+
+  .thumbnail,
+  .project-mockup--thumbnail {
+    grid-row: 1;
+    margin-bottom: 6.4rem;
+  }
+
   .video {
-    height: 26rem;
+    height: 36rem;
+    margin-bottom: 6.4rem;
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
     /* For safari: based on caniuse.com info */
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -218,14 +272,46 @@ Instead, 1rem = 1em = 16px */
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+    position: fixed;
+  }
+
+  .nav-open .main-nav .main-nav-list .hidden {
+    display: inline block;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 2.4rem;
+    transition: all 0.3s ease;
+  }
+
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    color: #90bcb0;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    height: 3.6rem;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
+    color: #333;
   }
 
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
+  }
+
+  .nav-open .btn-mobile-nav {
+    position: fixed;
+    right: 4rem;
   }
 
   .main-nav-list {
@@ -233,9 +319,10 @@ Instead, 1rem = 1em = 16px */
     gap: 4.8rem;
   }
 
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    font-size: 3rem;
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    background-color: #a0d1c3;
+    color: #fff;
   }
 }
 
@@ -244,59 +331,67 @@ Instead, 1rem = 1em = 16px */
 /* ****************** */
 
 @media (max-width: 48em) {
+  /* general.css */
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
 
   body {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+  }
+
+  /* style.css */
+
+  /* projects.css */
+  .container--project {
+    max-width: 60rem;
+    padding: 9.6rem 8.4rem;
+  }
+
+  .section-project-intro {
+    padding: 9.6rem 9.6rem;
   }
 
   .pager {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .pager-circle {
-    width: 8.2rem;
-    height: 8.2rem;
-  }
-
-  .container {
-    max-width: 90rem;
+    width: 9.6rem;
+    height: 9.6rem;
   }
 
   .project-intro {
-    max-width: 56rem;
-    font-size: 4.6rem;
+    max-width: 50rem;
+    font-size: 4.4rem;
+    letter-spacing: 8px;
   }
 
   .heading-project {
-    font-size: 2.6rem;
+    font-size: 4.2rem;
   }
 
   .subheading-project {
-    font-size: 1.8rem;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
   }
 
   .content:not(:last-child) {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
 
-  .grid--project {
-    column-gap: 3.2rem;
+  .thumbnail,
+  .project-mockup--thumbnail {
+    margin-bottom: 3.6rem;
   }
 
-  .footer .container {
-    gap: 1.2rem;
-  }
-
-  .logo {
-    height: 2.4rem;
-    width: 2.4rem;
-  }
-
-  .copyright {
-    font-size: 1.1rem;
+  .video {
+    height: 24rem;
+    margin-bottom: 3.6rem;
   }
 }
 
@@ -305,70 +400,82 @@ Instead, 1rem = 1em = 16px */
 /* ****************** */
 
 @media (max-width: 34em) {
-  .grid {
-    row-gap: 4.8rem;
-  }
+  /* general.css */
+
+  /* body {
+    font-size: 1.5rem;
+  } */
 
   .grid--2-cols,
-  .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: 1fr;
   }
 
-  .btn,
-  .btn:link,
-  .btn:visited {
-    padding: 2.4rem 1.2rem;
+  .grid--3-cols {
+    gap: 1rem;
   }
 
-  .section-hero {
-    padding: 2.4rem 0 6.4rem 0;
+  /* style.css */
+
+  /* projects.css */
+  .container--project {
+    max-width: 56rem;
+    padding: 7.8rem 7.8rem;
   }
 
-  .hero {
-    padding: 0 3.2rem;
+  .grid--project > div:nth-child(1) {
+    margin-bottom: 4.8rem;
   }
 
-  .hero-img {
-    width: 80%;
+  .grid--project > div:nth-child(2),
+  .grid--project > img:not(.thumbnail) {
+    margin-bottom: 4.8rem;
   }
 
-  .logos img {
-    height: 1.2rem;
-  }
-
-  .step-img-box:nth-child(2) {
-    grid-row: 1;
-  }
-
-  .step-img-box:nth-child(6) {
-    grid-row: 5;
-  }
-
-  .step-img-box {
-    transform: translateY(2.4rem);
-  }
-
-  .testimonials {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(4, 1fr);
+  .flex {
+    display: flex;
+    flex-direction: column;
     gap: 1.2rem;
+    flex: none;
   }
 
-  .cta {
-    grid-template-columns: 1fr;
+  .pager {
+    font-size: 1.15rem;
   }
 
-  .cta-img-box {
-    height: 32rem;
-    grid-row: 1;
+  .pager-circle {
+    width: 8.6rem;
+    height: 8.6rem;
   }
 
-  .cta-text-box {
-    padding: 3.2rem;
+  .project-intro {
+    font-size: 4.2rem;
+    letter-spacing: 7px;
+  }
+
+  .heading-project {
+    font-size: 3.35rem;
+  }
+
+  .project-summary {
+    font-size: 1.4rem;
+  }
+
+  .subheading-project {
+    font-size: 2.8rem;
+  }
+
+  .live-site > .site-link {
+    font-size: 1.4rem;
+  }
+
+  .video {
+    height: 24rem;
+    margin-bottom: 1rem;
+  }
+
+  .thumbnail {
+    margin-bottom: 0;
   }
 }
 

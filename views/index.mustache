@@ -37,12 +37,15 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="navbar" class="header">
         <a href="#">
             <img class="logo" src="./images/logo-white.png" alt="Fruzsina Kalo logo"/>
         </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
+                <li>
+                    <a class="smooth main-nav-link hidden" href="/#">Home</a>
+                </li>
                 <li>
                     <a data-scroll class="smooth main-nav-link" href="#work">Work</a>
                 </li>
@@ -86,14 +89,6 @@
 
             <div class="container grid grid--5-cols margin-bottom-md">
                 <div class="work">
-                    <div class="work-content">...who is eager to design complex products</div>
-                    <a href="/zone">
-                        <img class="hidden work-thumbnail" src="./images/work-thumbnails/Zone-thumbnail.png"
-                            alt="Graphisoft Archicad Zones UX design"/>
-                    </a>
-                </div>
-
-                <div class="work">
                     <div class="work-content">...who is all for the team</div>
                     <a href="/adeslogo">
                         <img class="hidden work-thumbnail" src="./images/work-thumbnails/ADES-thumbnail.png"
@@ -101,6 +96,14 @@
                     </a>
                 </div>
 
+                <div class="work">
+                    <div class="work-content">...who is eager to design complex products</div>
+                    <a href="/zone">
+                        <img class="hidden work-thumbnail" src="./images/work-thumbnails/Zone-thumbnail.png"
+                            alt="Graphisoft Archicad Zones UX design"/>
+                    </a>
+                </div>
+                
                 <div class="work">
                     <div class="work-content">...with coding skills</div>
                     <a href="/omnifood">
@@ -136,7 +139,7 @@
             <div class="container">
                 <div class="grid grid--2-cols">
                     <div class="description">You must've heard the term</div>
-                    <ul class="work-word-list">
+                    <ul class="description work-word-list">
                         <li class="work-words work-word-1">'Design Thinking'</li>
                         <li class="work-words work-word-2">'Double Diamond'</li>
                     </ul>

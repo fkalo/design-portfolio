@@ -30,6 +30,7 @@
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     
+    <script defer src="./javascripts/index.js"></script>
     <script defer src="./javascripts/work.js"></script>
 
     <title>Fruzsina Kalo &bull; Product Designer</title>
@@ -44,6 +45,9 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
+            <a class="smooth main-nav-link hidden" href="/#">Home</a>
+          </li>
+          <li>
             <a class="smooth main-nav-link" href="/#work">Work</a>
           </li>
           <li>
@@ -57,21 +61,26 @@
           </li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
-    <main>
+    <main class="zone">
       <div class="project-nav">
-        <a href="/cottonpasta">
+        <a href="/adeslogo">
           <div class="pager left">
             <div class="pager-circle">
-              <span class="nav-text nav-text--left">I can't stop creating!</span>
+              <span class="nav-text nav-text--left">I'm a team player, too!</span>
             </div>
           </div>
         </a>
-        <a href="/adeslogo">
+        <a href="/omnifood">
           <div class="pager right">
             <div class="pager-circle">
-              <p class="nav-text nav-text--right">I'm a team player, too!</p>
+              <p class="nav-text nav-text--right">I can script, too!</p>
             </div>
           </div>
         </a>
@@ -94,7 +103,7 @@
       </section>
 
       <section class="container--project grid grid--project">
-        <div class="subheading-project">My role</div>
+        <div class="subheading-project top">My role</div>
         <div>
           <p class="content highlight">
             As a new hire, I arrived at the exploration phase of the project and
@@ -110,7 +119,7 @@
       </section>
 
       <section class="container--project grid grid--project">
-        <div class="subheading-project">Problem statement</div>
+        <div class="subheading-project top">Problem statement</div>
         <div>
           <p class="content">
             As our users have been diving deeper and deeper in BIM modelling,
@@ -134,12 +143,12 @@
       </section>
 
       <section class="container--project grid grid--project">
-        <div>
+        <div class="top">
           <div class="subheading-project">Our solution</div>
           <p class="content">(or at least some bits of the whole package)</p>
         </div>
         <img
-          class="project-image"
+          class="project-image sub"
           src="./images/Zone_project/Solution_NewZoneLabel.png"
           alt="New Zone Label in BIM software, Archicad"
         />
@@ -202,43 +211,43 @@
       <section class="container--project grid grid--project">
         <div>
           <p class="content highlight">
-            The following prototypes were actually multipurpose.
+            These prototypes were actually multipurpose.
           </p>
           <p class="content">
             I used them to think through the possibilities and their effect on
             the model, but they were also used for user tests, consultations
             with the development team and the QA Engineers used them as a
-            reference in their complex test cases.
+            reference in their complex  est cases.
           </p>
         </div>
         <div class="grid grid--3-cols">
           <img
-            class="project-image"
+            class="project-image-group"
             src="./images/Zone_project/GO_01.png"
             alt="Graphic Override Rule settings in Archicad"
           />
           <img
-            class="project-image"
+            class="project-image-group"
             src="./images/Zone_project/GO_02.png"
             alt="Graphic Override Rule settings in Archicad"
           />
           <img
-            class="project-image"
+            class="project-image-group"
             src="./images/Zone_project/GO_03.png"
             alt="Graphic Override Rule settings in Archicad"
           />
           <img
-            class="project-image"
+            class="project-image-group"
             src="./images/Zone_project/GO_04.png"
             alt="Graphic Override Rule settings in Archicad"
           />
           <img
-            class="project-image"
+            class="project-image-group"
             src="./images/Zone_project/GO_05.png"
             alt="Graphic Override Rule settings in Archicad"
           />
           <img
-            class="project-image"
+            class="project-image-group"
             src="./images/Zone_project/GO_06.png"
             alt="Graphic Override Rule settings in Archicad"
           />

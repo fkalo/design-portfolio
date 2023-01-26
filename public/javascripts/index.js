@@ -1,18 +1,21 @@
-$(document).ready(function(){
+$(document).ready(function () {
   ///////////////////////////////////////////////////////////
   // Animated scrolling to sections on click:
 
   function scrollToSection(event) {
     event.preventDefault();
 
-    const $section = $($(this).attr('href')); 
+    const $section = $($(this).attr("href"));
 
-    $('html, body').animate({
-      scrollTop: $section.offset().top
-    }, 600);
-  };
+    $("html, body").animate(
+      {
+        scrollTop: $section.offset().top,
+      },
+      600
+    );
+  }
 
-  $('[data-scroll]').on('click', scrollToSection);
+  $("[data-scroll]").on("click", scrollToSection);
 
   ///////////////////////////////////////////////////////////
   // Make mobile navigation work
@@ -54,30 +57,43 @@ $(document).ready(function(){
   });
 
   ///////////////////////////////////////////////////////////
-  // Sticky navigation
-  // const sectionHeroEl = document.querySelector(".section-hero");
+  // Pretty navigation
 
-  // const obs = new IntersectionObserver(
-  //   function (entries) {
-  //     const ent = entries[0];
-  //     console.log(ent);
+  // let position = "absolute";
+  // let navbarTop = 0;
+  // let lastScrollPosition = 0;
+  // const supportPageOffset = window.pageYOffset !== undefined;
 
-  //     if (!ent.isIntersecting) {
-  //       document.body.classList.add("sticky");
+  // function onScroll() {
+  //   const navbar = document.getElementById("navbar");
+  //   const currentScrollPosition = supportPageOffset
+  //     ? window.pageYOffset
+  //     : document.documentElement.scrollTop;
+  //   if (currentScrollPosition <= 0) {
+  //     position = "absolute";
+  //     navbarTop = 0;
+  //     lastScrollPosition = 0;
+  //   } else {
+  //     if (currentScrollPosition > lastScrollPosition) {
+  //       position = "absolute";
+  //       let { top, height } = navbar.getBoundingClientRect();
+  //       if (top < -height) {
+  //         top = -height;
+  //       }
+  //       navbarTop = currentScrollPosition + top;
+  //     } else if (currentScrollPosition < lastScrollPosition) {
+  //       const { top } = navbar.getBoundingClientRect();
+  //       if (top >= 0) {
+  //         navbarTop = 0;
+  //         position = "fixed";
+  //       }
   //     }
-
-  //     if (ent.isIntersecting) {
-  //       document.body.classList.remove("sticky");
-  //     }
-  //   },
-  //   {
-  //     // In the viewport
-  //     root: null,
-  //     threshold: 0,
-  //     rootMargin: "-80px",
+  //     lastScrollPosition = currentScrollPosition;
   //   }
-  // );
-  // obs.observe(sectionHeroEl);
+  //   navbar.style = `position: ${position}; top: ${navbarTop}px;`;
+  // }
+
+  // window.addEventListener("scroll", onScroll, { passive: true });
 
   ///////////////////////////////////////////////////////////
   // Fixing flexbox gap property missing in some Safari versions

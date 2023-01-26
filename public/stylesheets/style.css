@@ -37,7 +37,7 @@
   text-transform: lowercase;
   font-weight: 300;
   font-size: 1.8rem;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .main-nav-link:hover,
@@ -79,6 +79,25 @@
 
 .icon-mobile-nav[name="close-outline"] {
   display: none;
+}
+
+/* Sticky navigation */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #333;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
 }
 
 /* ****************** */
@@ -271,11 +290,11 @@
   transform: translate(-50%, -50%);
   /* transform: rotateZ(45deg); */
 }
-
+/* 
 .diamond--research:link,
 .diamond--research:visited {
   order: 1;
-}
+} */
 
 .diamond--research,
 .diamond--ideation {
@@ -311,10 +330,10 @@
 .diamond--implementation:hover {
   transform: translateX(2rem);
 }
-
+/* 
 .diamond--research:active ~ .hidden {
   display: block;
-}
+} */
 
 .tasks {
   font-size: 2rem;

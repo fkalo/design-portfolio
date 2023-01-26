@@ -67,6 +67,7 @@ body {
   color: #fff;
   background-color: #333;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 
 /* ****************** */
