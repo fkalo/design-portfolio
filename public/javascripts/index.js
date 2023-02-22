@@ -57,6 +57,93 @@ $(document).ready(function () {
   });
 
   ///////////////////////////////////////////////////////////
+  // Diamond opening
+
+  const gridDiamonds = document.querySelector(".grid-diamonds");
+  const discover = document.querySelector("#discover");
+  const define = document.querySelector("#define");
+  const develop = document.querySelector("#develop");
+  const deliver = document.querySelector("#deliver");
+
+  const hiddenDiscover = document.querySelector("#hidden-discover");
+  const hiddenDefine = document.querySelector("#hidden-define");
+  const hiddenDevelop = document.querySelector("#hidden-develop");
+  const hiddenDeliver = document.querySelector("#hidden-deliver");
+  const activeDiamond = document.querySelector(".active");
+
+  discover.addEventListener("click", function () {
+    gridDiamonds.classList.toggle("active");
+    if (
+      gridDiamonds.style.gridTemplateColumns ===
+      "min-content 2fr min-content min-content min-content"
+    ) {
+      gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+      hiddenDiscover.style.display = "none";
+    } else {
+      gridDiamonds.style.gridTemplateColumns =
+        "min-content 2fr min-content min-content min-content";
+      hiddenDiscover.style.display = "flex";
+      hiddenDefine.style.display = "none";
+      hiddenDevelop.style.display = "none";
+      hiddenDeliver.style.display = "none";
+    }
+  });
+
+  define.addEventListener("click", function () {
+    gridDiamonds.classList.toggle("active");
+    if (
+      gridDiamonds.style.gridTemplateColumns ===
+      "min-content min-content 2fr min-content min-content"
+    ) {
+      gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+      hiddenDefine.style.display = "none";
+    } else {
+      gridDiamonds.style.gridTemplateColumns =
+        "min-content min-content 2fr min-content min-content";
+      hiddenDiscover.style.display = "none";
+      hiddenDefine.style.display = "flex";
+      hiddenDevelop.style.display = "none";
+      hiddenDeliver.style.display = "none";
+    }
+  });
+
+  develop.addEventListener("click", function () {
+    gridDiamonds.classList.toggle("active");
+    if (
+      gridDiamonds.style.gridTemplateColumns ===
+      "min-content min-content min-content 2fr min-content"
+    ) {
+      gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+      hiddenDevelop.style.display = "none";
+    } else {
+      gridDiamonds.style.gridTemplateColumns =
+        "min-content min-content min-content 2fr min-content";
+      hiddenDiscover.style.display = "none";
+      hiddenDefine.style.display = "none";
+      hiddenDevelop.style.display = "flex";
+      hiddenDeliver.style.display = "none";
+    }
+  });
+
+  deliver.addEventListener("click", function () {
+    gridDiamonds.classList.toggle("active");
+    if (
+      gridDiamonds.style.gridTemplateColumns ===
+      "min-content min-content min-content min-content 2fr"
+    ) {
+      gridDiamonds.style.gridTemplateColumns = "repeat(4, 1fr)";
+      hiddenDeliver.style.display = "none";
+    } else {
+      gridDiamonds.style.gridTemplateColumns =
+        "min-content min-content min-content min-content 2fr";
+      hiddenDiscover.style.display = "none";
+      hiddenDefine.style.display = "none";
+      hiddenDevelop.style.display = "none";
+      hiddenDeliver.style.display = "flex";
+    }
+  });
+
+  ///////////////////////////////////////////////////////////
   // Pretty navigation
 
   // let position = "absolute";

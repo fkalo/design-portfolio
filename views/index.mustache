@@ -137,46 +137,75 @@
             </div>
 
             <div class="container">
-                <div class="grid grid--2-cols">
+                <div class="grid grid--methods">
                     <div class="description">You must've heard the term</div>
-                    <ul class="description work-word-list">
-                        <li class="work-words work-word-1">'Design Thinking'</li>
-                        <li class="work-words work-word-2">'Double Diamond'</li>
+                    <ul class="description list">
+                        <li class="method-words method-word-1">'Design Thinking'</li>
+                        <li class="method-words method-word-2">'Double Diamond'</li>
                     </ul>
                 </div>
+                <div class="description inline">&#8211 here's how I applied them in the past few years.</div>
             </div>
 
-            <div class="container grid-diamonds grid--4-cols margin-bottom-md">
-                <div class="diamond--research">
-                    <img class="diamond diamond--research-initial" src="./images/diamonds/Research.png"
-                            alt="double diamond method research phase"/>
-                    <img class="diamond diamond--research-selected hidden" src="./images/diamonds/Research_accent.png"
-                            alt="double diamond method research phase"/>
-                    <span class="text text--odd">research</span>
-                </div>
+            <div class="container grid-center margin-bottom-md">
+                <div class="grid-diamonds">
+                    <div class="diamond--research column" id="discover">
+                        <div class="diamond diamond--discover">
+                            <div class="text text--odd">discover</div>
+                        </div>
+                    </div>
 
-                <div class="diamond--synthesis">
-                    <img class="diamond diamond--synthesis-initial" src="./images/diamonds/Synthesis.png"
-                            alt="double diamond method synthesis phase"/>
-                    <img class="diamond diamond--synthesis-selected hidden" src="./images/diamonds/Synthesis_accent.png"
-                            alt="double diamond method synthesis phase"/>
-                    <span class="text text--even">synthesis</span>
-                </div>
+                    <div class="text hidden" id="hidden-discover">
+                        <ul class="list discover--list">
+                            <li>Let's face it, we can never do enough discovery. That's why I use our product's community portal, where I can observe, listen and engage in conversation with our users directly.</li>
+                            <li>Besides, to explore the user needs and collect problem-specific data, I usually conduct interviews.</li>
+                            <li>Although we lacked of this opportunity due to COVID, I think the most important research is observation, especially with architects.</li>
+                        </ul>
+                    </div>
 
-                <div class="diamond--ideation">
-                    <img class="diamond diamond--ideation-initial" src="./images/diamonds/Ideation.png"
-                            alt="double diamond method ideation phase"/>
-                    <img class="diamond diamond--ideation-selected hidden" src="./images/diamonds/Ideation_accent.png"
-                            alt="double diamond method ideation phase"/>
-                    <span class="text text--odd">ideation</span>
-                </div>
+                    <div class="diamond--synthesis column" id="define">
+                        <div class="diamond diamond--define">
+                            <div class="text text--even">define</div>
+                        </div>
+                    </div>
 
-                <div class="diamond--implementation">
-                    <img class="diamond diamond--implementation-initial" src="./images/diamonds/Implementation.png"
-                            alt="double diamond method implementation phase"/>
-                    <img class="diamond diamond--implementation-selected hidden" src="./images/diamonds/Implementation_accent.png"
-                            alt="double diamond method implementation phase"/>
-                    <span class="text text--even text--implementation">implementation</span>
+                    <div class="text hidden" id="hidden-define">
+                        <ul class="list define--list">
+                            <li>After collecting “all” relevant data, we get deeper and try to make some sense out of them by the help of affinity sorting and empathy mapping.</li>
+                            <li>Despite the fact that this phase is not about research - by the book at least -, I often realise that we need some more info to fill in some gaps. That's when I turn to the users once more, like detective <span class="columbo">Columbo</span> with just one more thing.</li>
+                            <li>Also user personas for our products and workflows vary a lot. Using them during journey mapping and story mapping is crucial.</li>
+                            {{! <li>Mapping our own products for possible connecting areas to examine is a non-stop task, but 90% of it happens in this phase and our squad members also contribute.</li> }}
+                        </ul>
+                    </div>
+
+                    <div class="diamond--ideation column" id="develop">
+                        <div class="diamond diamond--develop">
+                            <div class="text text--odd">develop</div>
+                        </div>
+                    </div>
+
+                    <div class="text hidden" id="hidden-develop">
+                        <ul class="list develop--list">
+                            <li>Like research, story mapping and user journey mapping doesn't stop after one phase either.</li>
+                            <li>Apart from ideating with the team(s) and fellow designers and quickly visualising these through prototypes, our complex product needs to be evaluated too. To map connecting areas and gather all necessary information for consistency and feasibility.</li>
+                            <li>Remember <span class="columbo">Columbo?</span> I would give a call or write to our interviewees with just one more thing, to quickly validate the proposed concept.</li>
+                        </ul>
+                    </div>
+
+                    <div class="diamond--implementation column" id="deliver">
+                        <div class="diamond diamond--deliver">
+                            <div class="text text--even">deliver</div>
+                        </div>
+                    </div>
+
+                    <div class="text hidden" id="hidden-deliver">
+                        <ul class="list deliver--list">
+                            <li>Where does 'develop' end and 'deliver' start? Shortly, when the question “what” is replaced by “how”.</li>
+                            <li>I usually still have tasks, such as drawing the last icons and different graphics, finalising copy and being prepared to answer questions of QA Engineers.</li>
+                            <li>As the development progresses, I regularly check the finished stories in our daily builds and sometimes we iterate a little on the design or implementation.</li>
+                            <li>But! “A design isn't finished until someone is using it.” - Our enterprise product has an alpha and beta release period, which allows us to connect with our users and evaluate our previous decisions.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

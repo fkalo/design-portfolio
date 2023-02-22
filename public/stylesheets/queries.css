@@ -6,6 +6,16 @@ Instead, 1rem = 1em = 16px */
 /* ****************** */
 
 @media (max-width: 90em) {
+  /* general.css */
+  .container {
+    max-width: 130rem;
+  }
+
+  .description {
+    font-size: 2.2rem;
+    letter-spacing: 0.2px;
+  }
+
   /* projects.css */
   .container--project {
     max-width: 120rem;
@@ -36,6 +46,26 @@ Instead, 1rem = 1em = 16px */
   /* general.css */
   body {
     font-size: 2rem;
+  }
+
+  .container {
+    max-width: 120rem;
+  }
+
+  .description {
+    font-size: 2rem;
+    letter-spacing: 0.2px;
+  }
+
+  /* style.css */
+  .work-content {
+    padding: 4.8rem 2.4rem 4.8rem 2.4rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.3px;
+  }
+
+  .grid-diamonds > .text {
+    font-size: 1.8rem;
   }
 
   /* projects.css */
@@ -73,9 +103,61 @@ Instead, 1rem = 1em = 16px */
   body {
     font-size: 1.8rem;
   }
+  /* 
+  .section {
+    padding: 8.4rem 0;
+  } */
 
   .grid--3-cols {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--5-cols {
+    column-gap: 1.2rem;
+  }
+
+  .heading-primary {
+    font-size: 8.6rem;
+    letter-spacing: 16px;
+  }
+
+  .heading-secondary {
+    font-size: 6.4rem;
+  }
+
+  .subheading {
+    font-size: 1.7rem;
+    margin-bottom: 6.4rem;
+  }
+
+  /* .description {
+    font-size: 1.8rem;
+  } */
+
+  /* style.css */
+  .logo {
+    height: 3.2rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.6rem;
+  }
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    border: 1.6px solid #a0d1c3;
+  }
+
+  .hero-description {
+    font-size: 2.4rem;
+    letter-spacing: 2.4px;
+  }
+
+  .work-content {
+    padding: 4.8rem 2.4rem 4.8rem 2.4rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.2px;
   }
 
   /* projects.css */

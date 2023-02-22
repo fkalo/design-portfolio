@@ -105,7 +105,8 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
-  padding: 0 34rem;
+  padding: 0 auto;
+  justify-items: center;
 }
 
 .grid--5-cols {
@@ -115,6 +116,15 @@ body {
 
 .grid--6-cols {
   grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+}
+
+.grid-center {
+  display: grid;
+  justify-content: center;
+}
+
+.list {
+  list-style: none;
 }
 
 .heading-primary,
@@ -171,4 +181,8 @@ body {
 
 .hidden {
   display: none;
+}
+
+.inline {
+  display: inline-block;
 }

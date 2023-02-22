@@ -32,7 +32,7 @@
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   color: #fff;
   text-transform: lowercase;
   font-weight: 300;
@@ -142,6 +142,8 @@
   align-items: center;
   font-size: 2rem;
   font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
 }
 
 .work-thumbnail {
@@ -165,22 +167,31 @@
   display: none;
 }
 
-.work-word-list {
-  list-style: none;
+/* ****************** */
+/* METHODS SECTION */
+/* ****************** */
+
+.grid--methods {
+  grid-template-columns: 3fr 2fr;
+  column-gap: 1rem;
+  display: inline-grid;
+  max-height: 4rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 
-.work-words {
+.method-words {
   line-height: 4.8rem;
 }
 
-.work-word-1 {
+.method-word-1 {
   animation-name: pushDown;
   animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
 
-.work-word-2 {
+.method-word-2 {
   animation-name: changeColor;
   animation-duration: 6s;
   animation-fill-mode: forwards;
@@ -189,12 +200,12 @@
 
 @keyframes pushDown {
   0% {
-    margin-top: 0rem;
+    margin-top: 0;
     color: #90bcb0;
   }
 
   15% {
-    margin-top: 0rem;
+    margin-top: 0;
     color: #90bcb0;
   }
 
@@ -209,12 +220,12 @@
   }
 
   85% {
-    margin-top: 0rem;
+    margin-top: 0;
     color: #90bcb0;
   }
 
   100% {
-    margin-top: 0rem;
+    margin-top: 0;
     color: #90bcb0;
   }
 }
@@ -245,32 +256,74 @@
   }
 }
 
-/* ****************** */
-/* METHODS SECTION */
-/* ****************** */
-
 .grid-diamonds {
-  display: grid;
-  column-gap: 0;
-  /* max-width: 100rem; */
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  display: inline-grid;
+  transition: all 1s ease-in-out;
 }
 
 .diamond {
-  width: 100%;
   transition: all 0.4s;
+  width: 18rem;
+  height: 36rem;
+  background-size: cover;
+}
+
+.diamond--discover {
+  background-image: url("/images/diamonds/Research.png");
+}
+
+.diamond--define {
+  background-image: url("/images/diamonds/Synthesis.png");
+}
+
+.diamond--develop {
+  background-image: url("/images/diamonds/Ideation.png");
+}
+
+.diamond--deliver {
+  background-image: url("/images/diamonds/Implementation.png");
+}
+
+.diamond--discover:hover {
+  background-image: url("/images/diamonds/Research_accent.png");
+}
+
+.diamond--define:hover {
+  background-image: url("/images/diamonds/Synthesis_accent.png");
+}
+
+.diamond--develop:hover {
+  background-image: url("/images/diamonds/Ideation_accent.png");
+}
+
+.diamond--deliver:hover {
+  background-image: url("/images/diamonds/Implementation_accent.png");
 }
 
 .diamond--research,
 .diamond--synthesis,
 .diamond--ideation,
 .diamond--implementation {
-  width: 100%;
   position: relative;
   text-align: center;
 }
 
+.diamond--research-initial,
+.diamond--synthesis-initial,
+.diamond--ideation-initial,
+.diamond--implementation-initial,
+.diamond--research-selected,
+.diamond--synthesis-selected,
+.diamond--ideation-selected,
+.diamond--implementation-selected {
+  width: 18rem;
+  height: 36rem;
+}
+
 .text {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .text--odd {
@@ -279,7 +332,6 @@
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
-  /* transform: rotateZ(-45deg); */
 }
 
 .text--even {
@@ -288,13 +340,31 @@
   top: 50%;
   left: 45%;
   transform: translate(-50%, -50%);
-  /* transform: rotateZ(45deg); */
 }
-/* 
-.diamond--research:link,
-.diamond--research:visited {
-  order: 1;
-} */
+
+.grid-diamonds > .text {
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0.6px;
+}
+
+.discover--list,
+.define--list,
+.develop--list,
+.deliver--list {
+  margin: auto 3.2rem;
+  font-size: 1.7rem;
+}
+
+.discover--list li:not(:last-child),
+.define--list li:not(:last-child),
+.develop--list li:not(:last-child),
+.deliver--list li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
 
 .diamond--research,
 .diamond--ideation {
@@ -304,7 +374,11 @@
 .diamond--research:hover,
 .diamond--synthesis:hover,
 .diamond--ideation:hover,
-.diamond--implementation:hover {
+.diamond--implementation:hover,
+.diamond--research:active,
+.diamond--synthesis:active,
+.diamond--ideation:active,
+.diamond--implementation:active {
   cursor: pointer;
   transition: all 0.4s;
 }
@@ -323,16 +397,25 @@
   display: none;
 }
 
-.diamond--research:hover {
-  transform: translateX(-2rem);
+.columbo {
+  color: #90bcb0;
 }
 
-.diamond--implementation:hover {
-  transform: translateX(2rem);
+.columbo:hover {
+  cursor: url("/images/columbo_cursor.png"), pointer;
 }
-/* 
-.diamond--research:active ~ .hidden {
-  display: block;
+
+/* .active #discover {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-fill-mode: none;
+  animation-delay: 0;
+}
+
+@keyframes slide {
+  100% {
+    margin-left: 0;
+  }
 } */
 
 .tasks {
